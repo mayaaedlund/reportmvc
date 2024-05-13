@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 class CardPointsTest extends TestCase
 {
     /**
-     * Test that card points can be retrieved.
+     * Test that card points can be found.
      */
     public function testGetCardPoints()
     {
