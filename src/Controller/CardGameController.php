@@ -458,6 +458,9 @@ class CardGameController extends AbstractController
         return $this->redirectToRoute('gamestart');
     }
 
+    /**
+     * Player stays. 
+     */
     #[Route("/game/player/stay", name: "player_stay", methods: ['POST', 'GET'])]
     public function playerStay(SessionInterface $session, CardPoints $cardPoints, CardPlay $cardPlay): Response
     {
