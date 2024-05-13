@@ -1,0 +1,96 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Report{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>Report</h1>
+
+    <h2>Kursmoment:</h2>
+    <ul>
+        <li><a href="#kmom01">Kmom01</a></li>
+        <li><a href="#kmom02">Kmom02</a></li>
+        <li><a href="#kmom03">Kmom03</a></li>
+        <li><a href="#kmom04">Kmom04</a></li>
+        <li><a href="#kmom05">Kmom05</a></li>
+        <li><a href="#kmom06">Kmom06</a></li>
+        <li><a href="#kmom07">Kmom07</a></li>
+        <li><a href="#kmom10">Kmom10</a></li>
+    </ul>
+
+    <h2 id="kmom01">Kmom01</h2>
+    <p>Jag har tidigare erfarenhet av objektorienterad programmering
+    i Python från tidigare kurs. Jag blev där bekant med begrepp som
+    bland annat klasser och objekt. </p>
+
+    <p> I PHP defineras klasser med 'class', på samma sätt som klasser
+    i oopython-kursen gjorde. I PHP skapas ett objekt med operatorn 'new'. </p> 
+
+    <p> I början kändes det som att det var mycket att hålla koll på i koden
+    men efter att ha arbetat med detta kursmoment har jag fått förståelse över
+    hur koden är uppbygd och tycker att det känns smidigt att jobba med den.
+
+    <p> Efter att ha läst PHP The Right Way, känns det som att det finns extremt
+    mycket att lära sig om PHP och som man kan ta nytta av. Det jag tycker känns viktigast
+    är att jag lär mig ha en bra och strukturerad kod som gör det lätt för andra
+    att förstå. </p>
+
+    <p> Jag ser fram emot att lära mig att koppla samman PHP kod och databaser, i artikeln finns
+    det tips på hur man skriver den koden för att underlätta tester, debugging och göra den lättare
+    att förstå. Det ser jag fram emot att lära mig och ta nytta av. </p>
+
+    <p> I detta kursmoment har jag lärt mig hur jag skapar en hemsida med symfony
+    och hur jag skapar routes med hjälp av PHP. </p>
+
+    <h2 id="kmom02">Kmom02</h2>
+    <p>I PHP tillåter arv en klass att ärva egenskaper och metoder från en annan klass.
+    I min kod ärver exempelvis CardGraphic från Card genom att använda "extends".
+    Detta betyder att CardGraphic kommer ha åtkomst till alla egenskaper som Card har. </p>
+
+    <p> Komposition gör att en klass innehåller andra klasser. Exempelvis innehåller ett deck kort. 
+
+    Interface är ett kontrakt, en klass lovar att erbjuda visst många metoder. 
+
+    Ett trait definerar en eller flera metoder som en klass kan implementera och återanvända.
+    Detta gör det enkelt att återanvända kod och hålla den renare. </p>
+
+
+    <p> Jag löste uppgiften genom att använda mig av informationen jag fick i övningen.
+    Jag skapade mina klasser och min CardGameController. Jag skapade en landningssida,
+    Cards, där man kan välja att visa hela kortleken i ordning, i oordning, dra ett
+    random kort (utan påverkan av sessionen) och en route till "draw cards to your deck".
+    Där kan man välja att dra ett kort åt gången eller flera kort åt gången.
+    Allt som händer där sparas i sessionen. Sessionen finns lättillgängligt i navbaren och
+    man kan se vad som sparas samt rensa den. Jag är nöjd med hur det blev men om jag hade
+    haft mer tid hade jag lagt mer tid på CSS och stylingen. </p>
+
+    <p> Jag tycker att det känns kul att jobba i Symfony med applikationskod! Känns som det finns
+    mycket att lära sig vilket jag tycker känns utmanande på ett lagom sätt :D </p>
+
+    <p> Mitt TIL för detta kmom är att jag lärt mig hur man jobbar med sessioner för denna
+    applikation. </p>
+
+    <h2 id="kmom03">Kmom03</h2>
+    <p>Jag tyckte det var ett smart och effektivt sätt att påbörja problemlösningen med att skissa i ett anteckningsblock. Där fick jag en ide vad som behövdes och hur själva flödet i spelet skulle fungera. Jag försökte också fundera ut vad för kod jag redan hade och hur jag kunde skapa spelet med hjälp av den. Detta hjälpte mig otroligt mycket i starten och fick mig att kunna påbörja uppgiften. </p>
+    <p> Jag löste uppgiften genom att tillämpa två nya klasser, en CardPoints som tilldelar poäng till varje kort, för att kunna tilldela poäng till spelarna, samt CardPlay som innehåller logik för spelet. När spelet startar satte jag playerStopped till false och gameOn till true. När spelaren stannar, ändras playerStopped till true. Med detta kunde jag på ett enkelt sätt använda det i HTML-sidan för att ta bort spelarens knappar och visa dealerns knappar. Dealern har bara en knapp för att dra kort men inte för att stanna, jag implementerade en if-sats för att automatiskt stanna dealern om den får över 16 poäng. När spelet är över kallar den på funktionen evaluateWinner för att kolla vem som vann, och gameOn sätts till false - vilket gör att alla knappar utom "Starta om"-knappen försvinner. Detta för att visa tydligt när spelet är igång och när det är avslutat.</p>
+    <p> Jag är nöjd med uppgiften och att jag lyckades få till spelet utan att krångla till det för mycket. Jag hade dock velat göra att dealerna kort tas automatiskt istället för att man ska behöva trycka på en knapp. </p>
+    <p> Min känsla av Symfony är hittills positiv, det känns som att den erbjuder många verktyg för att kunna bygga och underhålla webb applikationer. </p>
+    <p> Mitt TIL för detta kursmoment är vikten av problemlösning! :D </p>
+
+
+
+    <h2 id="kmom04">Kmom04</h2>
+    <p>Här kommer redovisningstext för kmom04.</p>
+
+    <h2 id="kmom05">Kmom05</h2>
+    <p>Här kommer redovisningstext för kmom05.</p>
+
+    <h2 id="kmom06">Kmom06</h2>
+    <p>Här kommer redovisningstext för kmom06.</p>
+
+
+    <h2 id="kmom10">Kmom10</h2>
+    <p>Här kommer redovisningstext för kmom10.</p>
+</div>
+
+{% endblock %}

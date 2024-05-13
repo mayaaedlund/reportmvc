@@ -1,0 +1,76 @@
+{% extends "base.html.twig" %}
+
+{% block title %}21{% endblock %}
+
+{% block body %}
+
+<h1>21 [PLAYING]</h1>
+
+<div class="gameplan">
+
+    {{ include('flash.html.twig') }}
+
+    <h2 class="name">BANKENS KORT</h2>
+    <div class="card-container">
+        {% if dealerCards is defined and dealerCards %}
+            {% for cardSymbol in cardSymbols %}
+                <span class="card">{{ cardSymbol }}</span>
+            {% endfor %}
+        {% else %}
+            <p></p>
+        {% endif %}
+    </div>
+
+
+    <p class="center">POÄNG: {{ dealerpoints }}</p>
+
+    {% if playerStopped and gameOn %}
+    <form method="post" action="{{ path('dealer_card') }}">
+        <p>
+            <input type="hidden" name="action" value="dealer_card">
+            <input type="submit" name="dealerCard" value="BANKEN DRAR">
+        </p>
+    </form>
+    {% endif %}
+
+    <h2 class="name">DINA KORT:</h2>
+    <div class="card-container">
+        {% if drawnCards is defined and drawnCards %}
+            {% for cardString in cardStrings %}
+                <span class="card">{{ cardString }}</span>
+            {% endfor %}
+        {% else %}
+            <p>Börja dra ett kort</p>
+        {% endif %}
+    </div>
+
+    <p class="center">POÄNG: {{ points }}</p>
+
+    {% if not playerStopped and gameOn  %}
+    <form method="post" action="{{ path('play_card') }}">
+        <p>
+            <input type="hidden" name="action" value="play_card">
+            <input type="submit" name="playCard" value="DRAW CARD">
+        </p>
+    </form>
+
+    <form method="post" action="{{ path('player_stay') }}">
+        <p>
+            <input type="hidden" name="action" value="dealer_stay">
+            <input type="submit" name="playerStay" value="STANNA">
+        </p>
+    </form>
+    {% endif %}
+
+    <form method="post" action="{{ path('reset_game') }}">
+        <button type="submit">STARTA OM</button>
+    </form>
+
+</div>
+
+{{ include('flash.html.twig') }}
+
+
+
+
+{% endblock %}
