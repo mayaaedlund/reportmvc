@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1715621402">
-  <project timestamp="1715621402">
+<coverage generated="1715627627">
+  <project timestamp="1715627627">
     <file name="/home/maya/dbwebb-kurser/mvc/me/report/src/Card/Card.php">
       <class name="App\Card\Card" namespace="global">
         <metrics complexity="5" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="11" coveredelements="11"/>
       </class>
-      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="13"/>
-      <line num="12" type="stmt" count="13"/>
-      <line num="15" type="method" name="take" visibility="public" complexity="1" crap="1" count="5"/>
-      <line num="17" type="stmt" count="5"/>
-      <line num="20" type="method" name="getValue" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="22" type="stmt" count="1"/>
-      <line num="25" type="method" name="getAsString" visibility="public" complexity="1" crap="1" count="2"/>
-      <line num="27" type="stmt" count="2"/>
-      <line num="30" type="method" name="getAllNumbers" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="32" type="stmt" count="1"/>
-      <line num="33" type="stmt" count="1"/>
-      <metrics loc="37" ncloc="36" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="11" coveredelements="11"/>
+      <line num="27" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="13"/>
+      <line num="29" type="stmt" count="13"/>
+      <line num="38" type="method" name="take" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="40" type="stmt" count="4"/>
+      <line num="49" type="method" name="getValue" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="51" type="stmt" count="1"/>
+      <line num="60" type="method" name="getAsString" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="62" type="stmt" count="2"/>
+      <line num="71" type="method" name="getAllNumbers" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="73" type="stmt" count="1"/>
+      <line num="74" type="stmt" count="1"/>
+      <metrics loc="78" ncloc="42" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="11" coveredelements="11"/>
     </file>
     <file name="/home/maya/dbwebb-kurser/mvc/me/report/src/Card/CardGraphic.php">
       <class name="App\Card\CardGraphic" namespace="global">
-        <metrics complexity="5" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="12" coveredelements="12"/>
+        <metrics complexity="5" methods="5" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="6" elements="12" coveredelements="10"/>
       </class>
-      <line num="62" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="5"/>
-      <line num="64" type="stmt" count="5"/>
-      <line num="67" type="method" name="getAsString" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="69" type="stmt" count="1"/>
+      <line num="62" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="64" type="stmt" count="4"/>
+      <line num="67" type="method" name="getAsString" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="69" type="stmt" count="0"/>
       <line num="72" type="method" name="getGraphic" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="74" type="stmt" count="1"/>
-      <line num="78" type="method" name="getAllCards" visibility="public" complexity="1" crap="1" count="4"/>
-      <line num="80" type="stmt" count="4"/>
+      <line num="78" type="method" name="getAllCards" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="80" type="stmt" count="3"/>
       <line num="83" type="method" name="shuffledCards" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="85" type="stmt" count="1"/>
       <line num="88" type="stmt" count="1"/>
       <line num="90" type="stmt" count="1"/>
-      <metrics loc="93" ncloc="92" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="12" coveredelements="12"/>
+      <metrics loc="93" ncloc="92" classes="1" methods="5" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="6" elements="12" coveredelements="10"/>
     </file>
     <file name="/home/maya/dbwebb-kurser/mvc/me/report/src/Card/CardHand.php">
       <class name="App\Card\CardHand" namespace="global">
-        <metrics complexity="8" methods="5" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="8" elements="19" coveredelements="11"/>
+        <metrics complexity="8" methods="5" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="9" elements="19" coveredelements="13"/>
       </class>
-      <line num="29" type="method" name="add" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="31" type="stmt" count="1"/>
-      <line num="40" type="method" name="addOrderedCards" visibility="public" complexity="2" crap="2" count="1"/>
-      <line num="42" type="stmt" count="1"/>
-      <line num="43" type="stmt" count="1"/>
-      <line num="44" type="stmt" count="1"/>
-      <line num="53" type="method" name="getNumberCards" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="55" type="stmt" count="0"/>
+      <line num="29" type="method" name="add" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="31" type="stmt" count="2"/>
+      <line num="40" type="method" name="addOrderedCards" visibility="public" complexity="2" crap="2" count="2"/>
+      <line num="42" type="stmt" count="2"/>
+      <line num="43" type="stmt" count="2"/>
+      <line num="44" type="stmt" count="2"/>
+      <line num="53" type="method" name="getNumberCards" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="55" type="stmt" count="1"/>
       <line num="64" type="method" name="getString" visibility="public" complexity="2" crap="2" count="1"/>
       <line num="66" type="stmt" count="1"/>
       <line num="67" type="stmt" count="1"/>
@@ -59,7 +59,7 @@
       <line num="83" type="stmt" count="0"/>
       <line num="84" type="stmt" count="0"/>
       <line num="86" type="stmt" count="0"/>
-      <metrics loc="89" ncloc="54" classes="1" methods="5" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="8" elements="19" coveredelements="11"/>
+      <metrics loc="89" ncloc="54" classes="1" methods="5" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="9" elements="19" coveredelements="13"/>
     </file>
     <file name="/home/maya/dbwebb-kurser/mvc/me/report/src/Card/CardPlay.php">
       <class name="App\Card\CardPlay" namespace="global">
@@ -86,9 +86,9 @@
       <class name="App\Card\CardPoints" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
       </class>
-      <line num="63" type="method" name="getPoints" visibility="public" complexity="1" crap="1" count="2"/>
-      <line num="65" type="stmt" count="2"/>
-      <metrics loc="68" ncloc="68" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      <line num="81" type="method" name="getPoints" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="83" type="stmt" count="2"/>
+      <metrics loc="86" ncloc="71" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
     </file>
     <file name="/home/maya/dbwebb-kurser/mvc/me/report/src/Controller/CardGameController.php">
       <class name="App\Controller\CardGameController" namespace="global">
@@ -213,121 +213,121 @@
       <line num="273" type="stmt" count="0"/>
       <line num="274" type="stmt" count="0"/>
       <line num="276" type="stmt" count="0"/>
-      <line num="281" type="method" name="game" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="284" type="stmt" count="0"/>
-      <line num="287" type="method" name="gamestart" visibility="public" complexity="5" crap="30" count="0"/>
-      <line num="291" type="stmt" count="0"/>
-      <line num="293" type="stmt" count="0"/>
-      <line num="294" type="stmt" count="0"/>
-      <line num="296" type="stmt" count="0"/>
-      <line num="297" type="stmt" count="0"/>
+      <line num="284" type="method" name="game" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="287" type="stmt" count="0"/>
+      <line num="294" type="method" name="gamestart" visibility="public" complexity="5" crap="30" count="0"/>
+      <line num="298" type="stmt" count="0"/>
+      <line num="299" type="stmt" count="0"/>
       <line num="300" type="stmt" count="0"/>
-      <line num="301" type="stmt" count="0"/>
+      <line num="302" type="stmt" count="0"/>
       <line num="303" type="stmt" count="0"/>
-      <line num="304" type="stmt" count="0"/>
-      <line num="305" type="stmt" count="0"/>
       <line num="306" type="stmt" count="0"/>
       <line num="307" type="stmt" count="0"/>
+      <line num="309" type="stmt" count="0"/>
       <line num="310" type="stmt" count="0"/>
       <line num="311" type="stmt" count="0"/>
+      <line num="312" type="stmt" count="0"/>
       <line num="313" type="stmt" count="0"/>
-      <line num="315" type="stmt" count="0"/>
       <line num="316" type="stmt" count="0"/>
       <line num="317" type="stmt" count="0"/>
-      <line num="320" type="stmt" count="0"/>
+      <line num="319" type="stmt" count="0"/>
+      <line num="321" type="stmt" count="0"/>
       <line num="322" type="stmt" count="0"/>
       <line num="323" type="stmt" count="0"/>
-      <line num="324" type="stmt" count="0"/>
-      <line num="325" type="stmt" count="0"/>
+      <line num="326" type="stmt" count="0"/>
+      <line num="328" type="stmt" count="0"/>
+      <line num="329" type="stmt" count="0"/>
       <line num="330" type="stmt" count="0"/>
       <line num="331" type="stmt" count="0"/>
-      <line num="333" type="stmt" count="0"/>
-      <line num="334" type="stmt" count="0"/>
       <line num="335" type="stmt" count="0"/>
       <line num="336" type="stmt" count="0"/>
-      <line num="337" type="stmt" count="0"/>
       <line num="338" type="stmt" count="0"/>
       <line num="339" type="stmt" count="0"/>
       <line num="340" type="stmt" count="0"/>
       <line num="341" type="stmt" count="0"/>
       <line num="342" type="stmt" count="0"/>
       <line num="343" type="stmt" count="0"/>
+      <line num="344" type="stmt" count="0"/>
       <line num="345" type="stmt" count="0"/>
-      <line num="350" type="method" name="playCard" visibility="public" complexity="2" crap="6" count="0"/>
-      <line num="353" type="stmt" count="0"/>
-      <line num="354" type="stmt" count="0"/>
-      <line num="355" type="stmt" count="0"/>
-      <line num="356" type="stmt" count="0"/>
-      <line num="359" type="stmt" count="0"/>
+      <line num="346" type="stmt" count="0"/>
+      <line num="347" type="stmt" count="0"/>
+      <line num="348" type="stmt" count="0"/>
+      <line num="350" type="stmt" count="0"/>
+      <line num="357" type="method" name="playCard" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="360" type="stmt" count="0"/>
+      <line num="361" type="stmt" count="0"/>
       <line num="362" type="stmt" count="0"/>
-      <line num="365" type="stmt" count="0"/>
+      <line num="363" type="stmt" count="0"/>
       <line num="366" type="stmt" count="0"/>
+      <line num="367" type="stmt" count="0"/>
       <line num="370" type="stmt" count="0"/>
-      <line num="374" type="stmt" count="0"/>
-      <line num="375" type="stmt" count="0"/>
-      <line num="376" type="stmt" count="0"/>
+      <line num="371" type="stmt" count="0"/>
+      <line num="373" type="stmt" count="0"/>
+      <line num="377" type="stmt" count="0"/>
+      <line num="378" type="stmt" count="0"/>
       <line num="379" type="stmt" count="0"/>
-      <line num="380" type="stmt" count="0"/>
-      <line num="381" type="stmt" count="0"/>
       <line num="382" type="stmt" count="0"/>
+      <line num="383" type="stmt" count="0"/>
+      <line num="384" type="stmt" count="0"/>
       <line num="385" type="stmt" count="0"/>
-      <line num="452" type="method" name="dealerCard" visibility="public" complexity="2" crap="6" count="0"/>
-      <line num="456" type="stmt" count="0"/>
+      <line num="388" type="stmt" count="0"/>
+      <line num="395" type="method" name="dealerCard" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="399" type="stmt" count="0"/>
+      <line num="401" type="stmt" count="0"/>
+      <line num="402" type="stmt" count="0"/>
+      <line num="404" type="stmt" count="0"/>
+      <line num="405" type="stmt" count="0"/>
+      <line num="407" type="stmt" count="0"/>
+      <line num="408" type="stmt" count="0"/>
+      <line num="409" type="stmt" count="0"/>
+      <line num="411" type="stmt" count="0"/>
+      <line num="413" type="stmt" count="0"/>
+      <line num="415" type="stmt" count="0"/>
+      <line num="417" type="stmt" count="0"/>
+      <line num="418" type="stmt" count="0"/>
+      <line num="419" type="stmt" count="0"/>
+      <line num="421" type="stmt" count="0"/>
+      <line num="430" type="method" name="dealerStay" visibility="public" complexity="7" crap="56" count="0"/>
+      <line num="433" type="stmt" count="0"/>
+      <line num="434" type="stmt" count="0"/>
+      <line num="436" type="stmt" count="0"/>
+      <line num="437" type="stmt" count="0"/>
+      <line num="439" type="stmt" count="0"/>
+      <line num="440" type="stmt" count="0"/>
+      <line num="441" type="stmt" count="0"/>
+      <line num="442" type="stmt" count="0"/>
+      <line num="443" type="stmt" count="0"/>
+      <line num="444" type="stmt" count="0"/>
+      <line num="447" type="stmt" count="0"/>
+      <line num="448" type="stmt" count="0"/>
+      <line num="449" type="stmt" count="0"/>
+      <line num="450" type="stmt" count="0"/>
+      <line num="452" type="stmt" count="0"/>
+      <line num="455" type="stmt" count="0"/>
       <line num="458" type="stmt" count="0"/>
-      <line num="459" type="stmt" count="0"/>
-      <line num="461" type="stmt" count="0"/>
-      <line num="462" type="stmt" count="0"/>
-      <line num="464" type="stmt" count="0"/>
-      <line num="465" type="stmt" count="0"/>
-      <line num="466" type="stmt" count="0"/>
-      <line num="468" type="stmt" count="0"/>
+      <line num="464" type="method" name="playerStay" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="467" type="stmt" count="0"/>
+      <line num="469" type="stmt" count="0"/>
       <line num="470" type="stmt" count="0"/>
+      <line num="471" type="stmt" count="0"/>
       <line num="472" type="stmt" count="0"/>
-      <line num="474" type="stmt" count="0"/>
+      <line num="473" type="stmt" count="0"/>
       <line num="475" type="stmt" count="0"/>
-      <line num="476" type="stmt" count="0"/>
       <line num="478" type="stmt" count="0"/>
-      <line num="484" type="method" name="dealerStay" visibility="public" complexity="7" crap="56" count="0"/>
-      <line num="487" type="stmt" count="0"/>
+      <line num="485" type="method" name="resetGame" visibility="public" complexity="1" crap="2" count="0"/>
       <line num="488" type="stmt" count="0"/>
       <line num="490" type="stmt" count="0"/>
-      <line num="491" type="stmt" count="0"/>
-      <line num="493" type="stmt" count="0"/>
-      <line num="494" type="stmt" count="0"/>
-      <line num="495" type="stmt" count="0"/>
-      <line num="496" type="stmt" count="0"/>
-      <line num="497" type="stmt" count="0"/>
-      <line num="498" type="stmt" count="0"/>
-      <line num="501" type="stmt" count="0"/>
-      <line num="502" type="stmt" count="0"/>
-      <line num="503" type="stmt" count="0"/>
-      <line num="504" type="stmt" count="0"/>
-      <line num="506" type="stmt" count="0"/>
+      <line num="496" type="method" name="gamedock" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="500" type="stmt" count="0"/>
+      <line num="506" type="method" name="apigame" visibility="public" complexity="1" crap="2" count="0"/>
       <line num="509" type="stmt" count="0"/>
+      <line num="510" type="stmt" count="0"/>
       <line num="512" type="stmt" count="0"/>
-      <line num="515" type="method" name="playerStay" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="513" type="stmt" count="0"/>
+      <line num="514" type="stmt" count="0"/>
+      <line num="516" type="stmt" count="0"/>
       <line num="518" type="stmt" count="0"/>
-      <line num="520" type="stmt" count="0"/>
-      <line num="521" type="stmt" count="0"/>
-      <line num="522" type="stmt" count="0"/>
-      <line num="523" type="stmt" count="0"/>
-      <line num="524" type="stmt" count="0"/>
-      <line num="526" type="stmt" count="0"/>
-      <line num="529" type="stmt" count="0"/>
-      <line num="533" type="method" name="resetGame" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="536" type="stmt" count="0"/>
-      <line num="538" type="stmt" count="0"/>
-      <line num="541" type="method" name="gamedock" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="545" type="stmt" count="0"/>
-      <line num="548" type="method" name="apigame" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="551" type="stmt" count="0"/>
-      <line num="552" type="stmt" count="0"/>
-      <line num="554" type="stmt" count="0"/>
-      <line num="555" type="stmt" count="0"/>
-      <line num="556" type="stmt" count="0"/>
-      <line num="558" type="stmt" count="0"/>
-      <line num="560" type="stmt" count="0"/>
-      <metrics loc="563" ncloc="462" classes="1" methods="21" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="212" coveredstatements="0" elements="233" coveredelements="0"/>
+      <metrics loc="521" ncloc="456" classes="1" methods="21" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="212" coveredstatements="0" elements="233" coveredelements="0"/>
     </file>
     <file name="/home/maya/dbwebb-kurser/mvc/me/report/src/Controller/DiceGameController.php">
       <class name="App\Controller\DiceGameController" namespace="global">
@@ -604,6 +604,6 @@
       </class>
       <metrics loc="12" ncloc="12" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <metrics files="14" loc="1511" ncloc="1297" classes="13" methods="75" coveredmethods="28" conditionals="0" coveredconditionals="0" statements="444" coveredstatements="49" elements="519" coveredelements="77"/>
+    <metrics files="14" loc="1528" ncloc="1300" classes="13" methods="75" coveredmethods="28" conditionals="0" coveredconditionals="0" statements="444" coveredstatements="49" elements="519" coveredelements="77"/>
   </project>
 </coverage>

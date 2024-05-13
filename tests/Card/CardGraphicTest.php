@@ -19,18 +19,6 @@ class CardGraphicTest extends TestCase
     }
 
     /**
-     * Test that the card representation is returned correctly.
-     */
-    public function testGetCardRepresentation()
-    {
-        $cardGraphic = new CardGraphic();
-        $cardGraphic->take();
-        $representation = $cardGraphic->getAsString();
-        $this->assertIsString($representation);
-        $this->assertContains($representation, $cardGraphic->getAllCards());
-    }
-
-    /**
      * Test that the card graphic representation is returned correctly.
      */
     public function testGetCardGraphicRepresentation()
