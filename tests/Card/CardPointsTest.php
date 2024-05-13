@@ -24,3 +24,4 @@ class CardPointsTest extends TestCase
             $this->assertLessThanOrEqual(13, $points);
         }
     }
+}

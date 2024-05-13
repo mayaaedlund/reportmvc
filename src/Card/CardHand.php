@@ -4,13 +4,11 @@ namespace App\Card;
 
 use App\Card\Card;
 
-
 /**
  * Represents a hand of cards.
  */
 class CardHand
 {
-
     /**
      * The cards in the hand.
      *
@@ -31,7 +29,7 @@ class CardHand
         $this->hand[] = $card;
     }
 
-   
+
     /**
      * Adds all cards in order to the hand (52 cards).
      *

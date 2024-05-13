@@ -313,7 +313,7 @@ class CardGameController extends AbstractController
 
 
     /**
-     * Initializes everuthing that needs for the game to start. 
+     * Initializes everuthing that needs for the game to start.
      */
     #[Route("/game/start", name: "gamestart", methods: ['GET'])]
     public function gamestart(SessionInterface $session, CardPoints $cardPoints): Response
@@ -449,7 +449,7 @@ class CardGameController extends AbstractController
 
 
     /**
-     * Dealer stays. 
+     * Dealer stays.
      */
     #[Route("/game/dealer/stay", name: "dealer_stay", methods: ['POST', 'GET'])]
     public function dealerStay(SessionInterface $session, CardPoints $cardPoints, CardPlay $cardPlay): Response
@@ -483,7 +483,7 @@ class CardGameController extends AbstractController
     }
 
     /**
-     * Player stays. 
+     * Player stays.
      */
     #[Route("/game/player/stay", name: "player_stay", methods: ['POST', 'GET'])]
     public function playerStay(SessionInterface $session, CardPoints $cardPoints, CardPlay $cardPlay): Response

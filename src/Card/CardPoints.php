@@ -2,13 +2,11 @@
 
 namespace App\Card;
 
-
 /**
  * Class CardPoints calculates points associated with card values.
  */
 class CardPoints extends Card
 {
-
     /**
      * Points associated with card values.
      *

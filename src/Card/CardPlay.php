@@ -99,4 +99,3 @@ class CardPlay
         return $dealerPoints;
     }
 }
-
