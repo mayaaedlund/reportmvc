@@ -139,6 +139,9 @@ class CardGameController extends AbstractController
     }
 
 
+    /**
+     * Draw card to deck.
+     */
     #[Route("/card/deck/draw", name: "card_draw", methods: ['GET'])]
     public function start(SessionInterface $session): Response
     {
