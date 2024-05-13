@@ -490,6 +490,9 @@ class CardGameController extends AbstractController
         return $this->redirectToRoute('gamestart');
     }
 
+    /**
+     * Game docs.
+     */
     #[Route("/game/doc", name: "gamedoc", methods: ['GET'])]
     public function gamedock(SessionInterface $session): Response
     {
