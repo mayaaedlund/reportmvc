@@ -93,6 +93,9 @@ class CardGameController extends AbstractController
         return $this->render('card/all_cards.html.twig', $data);
     }
 
+    /**
+     * Renders the shuffled deck view.
+     */
     #[Route("/card/deck/shuffle", name: "shuffle_deck")]
     public function ShuffleCard(): Response
     {
