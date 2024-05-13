@@ -287,12 +287,15 @@ class CardGameController extends AbstractController
         return $this->render('card/game.html.twig');
     }
 
+
+    /**
+     * Initializes everuthing that needs for the game to start. 
+     */
     #[Route("/game/start", name: "gamestart", methods: ['GET'])]
     public function gamestart(SessionInterface $session, CardPoints $cardPoints): Response
     {
 
         $game = new CardPlay();
-        //
         $playerHand = $game->getPlayerHand();
         $dealerHand = $game->getDealerHand();
 
@@ -328,7 +331,6 @@ class CardGameController extends AbstractController
                 $cardStrings[] = $cardGraphic->getGraphic($drawnCard);
             }
         }
-
 
         $playerStopped = $session->get('playerStopped', false);
         $gameOn = $session->get('gameOn', true);
