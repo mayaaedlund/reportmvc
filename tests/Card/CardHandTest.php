@@ -28,7 +28,7 @@ class CardHandTest extends TestCase
     {
         $cardHand = new CardHand();
         $cardHand->addOrderedCards();
-        $this->assertEquals(52, $cardHand->getNumberDices());
+        $this->assertEquals(52, $cardHand->getNumberCards());
     }
 
     /**
