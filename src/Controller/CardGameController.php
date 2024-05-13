@@ -389,69 +389,9 @@ class CardGameController extends AbstractController
     }
 
 
-    /*
-
-    #[Route("/game/player", name: "play_card", methods: ['POST', 'GET'])]
-    public function playCard(SessionInterface $session, CardPoints $cardPoints, CardPlay $cardPlay): Response
-    {
-        $playerHand = $session->get('playerHand');
-        $deck = $session->get('deck');
-        $points = $session->get('points', 0);
-        $drawnCards = $session->get('drawn_cards', []); // Retrieve drawn cards from session
-
-        [$drawnCard, $points] = $cardPlay->drawCardForPlayer($playerHand, $deck, $cardPoints, $points);
-
-        // Store the drawn card in the session
-        $drawnCards[] = $drawnCard;
-        $session->set('drawn_cards', $drawnCards);
-
-        // Uppdatera sessionen med spelarens hand och leken
-        $session->set('playerHand', $playerHand);
-        $session->set('deck', $deck);
-        $session->set('points', $points);
-
-        // Kontrollera om spelaren gick över 21
-        if ($points > 21) {
-            $session->set('playerStopped', true);
-            $session->set('gameOn', false);
-            $this->addFlash('warning', 'Du gick över 21. Dealern vinner.');
-        }
-        return $this->redirectToRoute('gamestart');
-    }*/
-
-
-    /*
-        #[Route("/game/player", name: "play_card", methods: ['POST', 'GET'])]
-        public function playCard(SessionInterface $session, CardPoints $cardPoints, CardPlay $cardPlay): Response
-        {
-            $playerHand = $session->get('playerHand');
-            $deck = $session->get('deck');
-            $points = $session->get('points', 0);
-
-            // Skapa en instans av CardHand om det inte finns någon i sessionen
-            if ($playerHand === null) {
-                $playerHand = new CardHand();
-            }
-
-            // Anropa drawCardForPlayer-metoden och skicka med nödvändiga parametrar
-            $points = $cardPlay->drawCardForPlayer($playerHand, $deck, $cardPoints, $points);
-
-            // Uppdatera sessionen med spelarens hand och leken
-            $session->set('playerHand', $playerHand);
-            $session->set('deck', $deck);
-            $session->set('points', $points);
-
-            // Kontrollera om spelaren gick över 21
-            if ($points > 21) {
-                $session->set('playerStopped', true);
-                $session->set('gameOn', false);
-                $this->addFlash('warning', 'Du gick över 21. Dealern vinner.');
-            }
-            return $this->redirectToRoute('gamestart');
-        }*/
-
-
-
+    /**
+     * Draw Card for dealer
+     */
     #[Route("/game/dealer", name: "dealer_card", methods: ['POST', 'GET'])]
     public function dealerCard(SessionInterface $session, CardPoints $cardPoints, CardPlay $cardPlay): Response
     {
