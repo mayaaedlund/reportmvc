@@ -2,8 +2,18 @@
 
 namespace App\Card;
 
+
+/**
+ * Class CardPoints calculates points associated with card values.
+ */
 class CardPoints extends Card
 {
+
+    /**
+     * Points associated with card values.
+     *
+     * @var array
+     */
     protected $points = [
         1 => 1,
         2 => 2,
@@ -60,6 +70,14 @@ class CardPoints extends Card
     ];
 
 
+
+    /**
+     * Get the points associated with a card value.
+     *
+     * @param int $cardValue The value of the card.
+     *
+     * @return int The points associated with the card value.
+     */
     public function getPoints(int $cardValue): int
     {
         return $this->points[$cardValue];
