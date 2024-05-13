@@ -191,6 +191,9 @@ class CardGameController extends AbstractController
     }
 
 
+    /**
+     * Add card to deck.
+     */
     #[Route("/card/draw/add", name: "add_card", methods: ['POST'])]
     public function addCard(SessionInterface $session): Response
     {
