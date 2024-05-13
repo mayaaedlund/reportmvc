@@ -57,6 +57,9 @@ class CardGameController extends AbstractController
         return $this->redirectToRoute('session');
     }
 
+    /**
+     * Test route.
+     */
     #[Route("/card/draw/test", name: "draw_card")]
     public function testCard(): Response
     {
