@@ -424,6 +424,9 @@ class CardGameController extends AbstractController
     }
 
 
+    /**
+     * Dealer stays. 
+     */
     #[Route("/game/dealer/stay", name: "dealer_stay", methods: ['POST', 'GET'])]
     public function dealerStay(SessionInterface $session, CardPoints $cardPoints, CardPlay $cardPlay): Response
     {
