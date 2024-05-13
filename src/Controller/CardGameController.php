@@ -500,6 +500,9 @@ class CardGameController extends AbstractController
         return $this->render('card/gamedocs.html.twig');
     }
 
+    /**
+     * Api game, see leaderboard.
+     */
     #[Route("/api/game", name: "api_game", methods: ['POST', 'GET'])]
     public function apigame(SessionInterface $session): Response
     {
