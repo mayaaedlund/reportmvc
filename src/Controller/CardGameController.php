@@ -118,6 +118,9 @@ class CardGameController extends AbstractController
         return $this->render('card/init.html.twig');
     }
 
+    /**
+     * Initialize the session for the card deck.
+     */
     #[Route("/card/init", name: "card_init_post", methods: ['POST'])]
     public function initCallback(
         Request $request,
