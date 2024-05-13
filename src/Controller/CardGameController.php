@@ -219,6 +219,9 @@ class CardGameController extends AbstractController
     }
 
 
+    /**
+     * Draw a number of cards.
+     */
     #[Route("/card/deck/draw/{num<\d+>}", name: "draw_multiple")]
     public function draw_multiple(int $num, SessionInterface $session, CardGraphic $cardGraphic): Response
     {
