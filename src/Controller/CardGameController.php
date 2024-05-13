@@ -75,6 +75,9 @@ class CardGameController extends AbstractController
         return $this->render('card/one_card.html.twig', $data);
     }
 
+    /**
+     * Renders the organized deck view.
+     */
     #[Route("/card/deck", name: "deck")]
     public function deckCard(): Response
     {
