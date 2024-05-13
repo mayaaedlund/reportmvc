@@ -112,6 +112,9 @@ class CardGameController extends AbstractController
     }
 
 
+    /**
+     * Renders the card view.
+     */
     #[Route("/card/init", name: "card_init_get", methods: ['GET'])]
     public function init(): Response
     {
