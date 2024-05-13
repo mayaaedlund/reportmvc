@@ -278,6 +278,9 @@ class CardGameController extends AbstractController
 
 
 
+    /**
+     * Renders the game view.
+     */
     #[Route("/game", name: "game", methods: ['GET'])]
     public function game(): Response
     {
