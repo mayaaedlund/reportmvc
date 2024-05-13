@@ -56,7 +56,7 @@ class CardPlay
     }
 
     /**
-     * Draw a card for the player and update player's points.
+     * Update player's points.
      *
      * @param CardHand $playerHand The player's hand.
      * @param array $deck The deck of cards.
@@ -79,7 +79,7 @@ class CardPlay
     }
 
     /**
-     * Draw a card for the dealer and update dealer's points.
+     * Update dealer's points.
      *
      * @param CardPoints $cardPoints The points associated with each card.
      * @param mixed $drawnCard The drawn card.
