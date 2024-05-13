@@ -479,6 +479,9 @@ class CardGameController extends AbstractController
     }
 
 
+    /**
+     * Reset game, clear session.
+     */
     #[Route("/reset-game", name: "reset_game", methods: ['POST'])]
     public function resetGame(SessionInterface $session): Response
     {
