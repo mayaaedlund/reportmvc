@@ -351,7 +351,9 @@ class CardGameController extends AbstractController
     }
 
 
-    // I CardGameController-klassen
+    /**
+     * Draw Card for player
+     */
     #[Route("/game/player", name: "play_card", methods: ['POST', 'GET'])]
     public function playCard(SessionInterface $session, CardPoints $cardPoints, CardPlay $cardPlay): Response
     {
@@ -362,16 +364,12 @@ class CardGameController extends AbstractController
 
         // Dra ett kort från leken
         $drawnCard = array_pop($deck);
-
-        // Add the card to the player's hand
         $playerHand->add(new CardGraphic());
 
         // Lägg till det dragna kortet i sessionen
         $drawnCards[] = $drawnCard;
         $session->set('drawn_cards', $drawnCards);
 
-        // Uppdatera poängen genom att kalla på pointsPlayer
-        // Uppdatera poängen genom att kalla på pointsPlayer
         $points = $cardPlay->drawCardForPlayer($playerHand, $deck, $cardPoints, $points, $drawnCard);
 
 
