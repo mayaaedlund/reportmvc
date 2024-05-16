@@ -9,6 +9,7 @@ use App\Repository\ProductRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 class ProductController extends AbstractController
 {
@@ -138,4 +139,5 @@ class ProductController extends AbstractController
 
         return $this->json($products);
     }
+
 }

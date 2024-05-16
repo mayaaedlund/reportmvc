@@ -9,6 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 class LibraryController extends AbstractController
 {
@@ -163,6 +164,25 @@ class LibraryController extends AbstractController
         $entityManager->flush();
 
         return $this->redirectToRoute('library_view_all');
+    }
+
+    #[Route('/api/library/books', name: 'api_library_books', methods: ['GET'])]
+    public function getAllBooks(LibraryRepository $libraryRepository): JsonResponse
+    {
+        $libraries = $libraryRepository->findAll();
+
+        $data = [];
+        foreach ($libraries as $library) {
+            $data[] = [
+                'id' => $library->getId(),
+                'book' => $library->getBook(),
+                'isbn' => $library->getISBN(),
+                'author' => $library->getAuthor(),
+                'image' => $library->getImage(),
+            ];
+        }
+
+        return new JsonResponse($data);
     }
 }
 
