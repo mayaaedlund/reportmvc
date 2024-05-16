@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Ändra {{ library.getBook }}{% endblock %}
+
+{% block body %}
+
+<h1>{{ library.getBook }}</h1>
+<ul>
+    <li>ISBN: {{ library.getISBN }}</li>
+    <li>Author: {{ library.getAuthor }}</li>
+    <li>Image: <img src="{{ library.getImage|e }}" alt="{{ library.getBook|e }}" style="max-width: 100px; max-height: 150px;"></li>
+</ul>
+
+<form action="{{ path('update_Book', {'id': library.getId}) }}" method="post">
+    <div>
+        <label for="book">Book Name:</label>
+        <input type="text" id="book" name="book">
+    </div>
+    <div>
+        <label for="isbn">ISBN:</label>
+        <input type="text" id="isbn" name="isbn">
+    </div>
+    <div>
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author">
+    </div>
+    <div>
+        <label for="image">Image URL:</label>
+        <input type="text" id="image" name="image">
+    </div>
+    <div>
+        <button type="submit">Save Changes</button>
+    </div>
+</form>
+
+{% endblock %}

@@ -5,10 +5,14 @@
 {% block body %}
 
 <h1>{{ library.getBook }}</h1>
+<img src="{{ library.getImage|e }}" alt="{{ library.getBook|e }}" style="max-width: 600px; max-height: 850px;">
+
 <ul>
     <li>ISBN: {{ library.getISBN }}</li>
     <li>Author: {{ library.getAuthor }}</li>
-    <li>Image URL: {{ library.getImage }}</li>
+     <li>ID: {{ library.getId }}</li>
 </ul>
+
+<a href="{{ path('book_change', {'id': library.getId}) }}">Ändra information</a>
 
 {% endblock %}

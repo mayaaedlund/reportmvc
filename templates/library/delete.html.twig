@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Välkommen till vårt bibliotek!{% endblock %}
+
+{% block body %}
+
+<h1>Delete a book from our library:</h1>
+
+<form action="{{ path('book_delete') }}" method="post">
+    <div>
+        <label for="book_id">Book ID:</label>
+        <input type="text" id="book_id" name="book_id" required>
+    </div>
+    <div>
+        <button type="submit">Delete Book</button>
+    </div>
+</form>
+
+{% endblock %}

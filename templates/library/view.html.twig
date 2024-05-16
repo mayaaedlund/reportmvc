@@ -5,11 +5,12 @@
 {% block body %}
 
 <h1> This is all our books: </h1>
+
 <ul>
     {% for library in library %}
         <li>
+            <img src="{{ library.getImage|e }}" alt="{{ library.getBook|e }}" style="max-width: 300px; max-height: 450px;"><br>
             <a href="{{ path('book_by_id', {id: library.getId}) }}">{{ library.getBook|e }}</a>
-            {{ library.getImage|e }}
         </li>
     {% endfor %}
 </ul>
