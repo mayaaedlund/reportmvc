@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Välkommen till vårt bibliotek!{% endblock %}
+
+{% block body %}
+
+<h1> This is all our books: </h1>
+<ul>
+    {% for library in library %}
+        <li>
+            <a href="{{ path('book_by_id', {id: library.getId}) }}">{{ library.getBook|e }}</a>
+            {{ library.getImage|e }}
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

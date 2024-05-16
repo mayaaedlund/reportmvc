@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ library.getBook }}{% endblock %}
+
+{% block body %}
+
+<h1>{{ library.getBook }}</h1>
+<ul>
+    <li>ISBN: {{ library.getISBN }}</li>
+    <li>Author: {{ library.getAuthor }}</li>
+    <li>Image URL: {{ library.getImage }}</li>
+</ul>
+
+{% endblock %}
