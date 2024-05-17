@@ -108,17 +108,15 @@ class LibraryController extends AbstractController
     ): Response {
         $entityManager = $doctrine->getManager();
         $library = $entityManager->getRepository(Library::class)->find($id);
-    
+
         if (!$library) {
             throw $this->createNotFoundException(
                 'No book found for id ' . $id
             );
         }
-    
-        // Hämta data från begäran
+
         $requestData = $request->request->all();
-    
-        // Uppdatera bokens attribut om de inte är tomma
+
         if (!empty($requestData['book'])) {
             $library->setBook($requestData['book']);
         }
@@ -131,14 +129,12 @@ class LibraryController extends AbstractController
         if (!empty($requestData['image'])) {
             $library->setImage($requestData['image']);
         }
-    
-        // Spara ändringarna
+
         $entityManager->flush();
-    
-        // Omdirigera till sidan för att visa information om boken efter ändringarna
+
         return $this->redirectToRoute('library_view_all');
     }
-    
+
 
     #[Route('/library/create', name: 'book_add', methods: ['GET'])]
     public function libraryAdd(): Response
@@ -206,6 +202,3 @@ class LibraryController extends AbstractController
     }
 
 }
-
-
-
