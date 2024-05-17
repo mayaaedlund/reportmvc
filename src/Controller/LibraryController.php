@@ -184,6 +184,27 @@ class LibraryController extends AbstractController
 
         return new JsonResponse($data);
     }
+
+    #[Route('/api/library/book/{isbn}', name: 'api_library_book_by_isbn', methods: ['GET'])]
+    public function getBookByISBN(string $isbn, LibraryRepository $libraryRepository): JsonResponse
+    {
+        $library = $libraryRepository->findOneBy(['isbn' => $isbn]);
+
+        if (!$library) {
+            return new JsonResponse(['error' => 'No book found for ISBN ' . $isbn], 404);
+        }
+
+        $data = [
+            'id' => $library->getId(),
+            'book' => $library->getBook(),
+            'isbn' => $library->getISBN(),
+            'author' => $library->getAuthor(),
+            'image' => $library->getImage(),
+        ];
+
+        return new JsonResponse($data);
+    }
+
 }
 
 

@@ -7,17 +7,19 @@
 
 <p>Välkommen till api-sidan. Här kan du välja bland dessa alternativ:</p>
 
-<a href="{{ path('api_deck') }}" class="btn btn-primary">View Deck</a>
+<a href="{{ path('api_deck') }}" class="btn btn-primary">View Deck</a> <br>
 
 <!-- Knapp för att länka till card/deck/shuffle -->
-<a href="{{ path('api_shuffle') }}" class="btn btn-primary">Shuffle Deck</a>
+<a href="{{ path('api_shuffle') }}" class="btn btn-primary">Shuffle Deck</a><br>
 
 <!-- Knapp för att länka till card/draw -->
-<a href="{{ path('api_draw') }}" class="btn btn-primary">Draw random Card</a>
+<a href="{{ path('api_draw') }}" class="btn btn-primary">Draw random Card</a><br>
 
-<a href="{{ path('api_game') }}" class="btn btn-primary">BlackJack</a>
+<a href="{{ path('api_game') }}" class="btn btn-primary">BlackJack</a><br>
 
-<a href="{{ path('api_library_books') }}" class="btn btn-primary">Library</a>
+<a href="{{ path('api_library_books') }}" class="btn btn-primary">Library</a><br>
+
+<a href="{{ path('api_library_book_by_isbn', {isbn: '9780747532699'}) }}" class="btn btn-primary">View Book based on ISBN</a><br>
 
 
 {% endblock %}
