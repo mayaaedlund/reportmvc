@@ -188,7 +188,7 @@ class LibraryController extends AbstractController
     #[Route('/api/library/book/{isbn}', name: 'api_library_book_by_isbn', methods: ['GET'])]
     public function getBookByISBN(string $isbn, LibraryRepository $libraryRepository): JsonResponse
     {
-        $library = $libraryRepository->findOneBy(['isbn' => $isbn]);
+        $library = $libraryRepository->findOneBy(['ISBN' => $isbn]);
 
         if (!$library) {
             return new JsonResponse(['error' => 'No book found for ISBN ' . $isbn], 404);
