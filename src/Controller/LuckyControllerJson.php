@@ -183,5 +183,4 @@ class LuckyControllerJson
         // Returnera JSON-svar
         return new JsonResponse($response);
     }
-
 }
