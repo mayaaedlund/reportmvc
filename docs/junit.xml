@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="25" assertions="315" errors="0" warnings="0" failures="0" skipped="0" time="0.211055">
-    <testsuite name="Project Test Suite" tests="25" assertions="315" errors="0" warnings="0" failures="0" skipped="0" time="0.211055">
-      <testsuite name="App\Tests\Controller\CardControllerTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardControllerTest.php" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.185725">
-        <testcase name="testHomeRoute" class="App\Tests\Controller\CardControllerTest" classname="App.Tests.Controller.CardControllerTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardControllerTest.php" line="30" assertions="1" time="0.174568"/>
-        <testcase name="testApiRoute" class="App\Tests\Controller\CardControllerTest" classname="App.Tests.Controller.CardControllerTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardControllerTest.php" line="39" assertions="1" time="0.011157"/>
+  <testsuite name="" tests="25" assertions="315" errors="0" warnings="0" failures="0" skipped="0" time="0.342935">
+    <testsuite name="Project Test Suite" tests="25" assertions="315" errors="0" warnings="0" failures="0" skipped="0" time="0.342935">
+      <testsuite name="App\Tests\Controller\CardControllerTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardControllerTest.php" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.296554">
+        <testcase name="testHomeRoute" class="App\Tests\Controller\CardControllerTest" classname="App.Tests.Controller.CardControllerTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardControllerTest.php" line="29" assertions="1" time="0.276926"/>
+        <testcase name="testApiRoute" class="App\Tests\Controller\CardControllerTest" classname="App.Tests.Controller.CardControllerTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardControllerTest.php" line="44" assertions="1" time="0.019628"/>
       </testsuite>
-      <testsuite name="App\Card\CardGraphicTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardGraphicTest.php" tests="4" assertions="8" errors="0" warnings="0" failures="0" skipped="0" time="0.005155">
-        <testcase name="testCreateCardGraphic" class="App\Card\CardGraphicTest" classname="App.Card.CardGraphicTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardGraphicTest.php" line="15" assertions="1" time="0.000954"/>
-        <testcase name="testGetCardGraphicRepresentation" class="App\Card\CardGraphicTest" classname="App.Card.CardGraphicTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardGraphicTest.php" line="24" assertions="2" time="0.000894"/>
-        <testcase name="testGetAllCards" class="App\Card\CardGraphicTest" classname="App.Card.CardGraphicTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardGraphicTest.php" line="36" assertions="2" time="0.000555"/>
-        <testcase name="testShuffledCards" class="App\Card\CardGraphicTest" classname="App.Card.CardGraphicTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardGraphicTest.php" line="47" assertions="3" time="0.002752"/>
+      <testsuite name="App\Card\CardGraphicTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardGraphicTest.php" tests="4" assertions="8" errors="0" warnings="0" failures="0" skipped="0" time="0.009600">
+        <testcase name="testCreateCardGraphic" class="App\Card\CardGraphicTest" classname="App.Card.CardGraphicTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardGraphicTest.php" line="15" assertions="1" time="0.001902"/>
+        <testcase name="testGetCardGraphicRepresentation" class="App\Card\CardGraphicTest" classname="App.Card.CardGraphicTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardGraphicTest.php" line="24" assertions="2" time="0.001542"/>
+        <testcase name="testGetAllCards" class="App\Card\CardGraphicTest" classname="App.Card.CardGraphicTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardGraphicTest.php" line="36" assertions="2" time="0.000908"/>
+        <testcase name="testShuffledCards" class="App\Card\CardGraphicTest" classname="App.Card.CardGraphicTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardGraphicTest.php" line="47" assertions="3" time="0.005248"/>
       </testsuite>
-      <testsuite name="App\Card\CardHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardHandTest.php" tests="4" assertions="56" errors="0" warnings="0" failures="0" skipped="0" time="0.002056">
-        <testcase name="testCreateCardHand" class="App\Card\CardHandTest" classname="App.Card.CardHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardHandTest.php" line="17" assertions="1" time="0.000634"/>
-        <testcase name="testGetNumberCards" class="App\Card\CardHandTest" classname="App.Card.CardHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardHandTest.php" line="27" assertions="1" time="0.000335"/>
-        <testcase name="testGetStringRepresentation" class="App\Card\CardHandTest" classname="App.Card.CardHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardHandTest.php" line="37" assertions="53" time="0.000551"/>
-        <testcase name="testCalculateSumOfCardValues" class="App\Card\CardHandTest" classname="App.Card.CardHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardHandTest.php" line="51" assertions="1" time="0.000535"/>
+      <testsuite name="App\Card\CardHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardHandTest.php" tests="4" assertions="56" errors="0" warnings="0" failures="0" skipped="0" time="0.003887">
+        <testcase name="testCreateCardHand" class="App\Card\CardHandTest" classname="App.Card.CardHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardHandTest.php" line="17" assertions="1" time="0.001020"/>
+        <testcase name="testGetNumberCards" class="App\Card\CardHandTest" classname="App.Card.CardHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardHandTest.php" line="27" assertions="1" time="0.000827"/>
+        <testcase name="testGetStringRepresentation" class="App\Card\CardHandTest" classname="App.Card.CardHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardHandTest.php" line="37" assertions="53" time="0.000879"/>
+        <testcase name="testCalculateSumOfCardValues" class="App\Card\CardHandTest" classname="App.Card.CardHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardHandTest.php" line="51" assertions="1" time="0.001161"/>
       </testsuite>
-      <testsuite name="App\Card\CardPlayTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardPlayTest.php" tests="3" assertions="6" errors="0" warnings="0" failures="0" skipped="0" time="0.010217">
-        <testcase name="testConstructor" class="App\Card\CardPlayTest" classname="App.Card.CardPlayTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardPlayTest.php" line="14" assertions="2" time="0.000219"/>
-        <testcase name="testDrawCardForPlayer" class="App\Card\CardPlayTest" classname="App.Card.CardPlayTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardPlayTest.php" line="21" assertions="2" time="0.009664"/>
-        <testcase name="testDrawCardForDealer" class="App\Card\CardPlayTest" classname="App.Card.CardPlayTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardPlayTest.php" line="39" assertions="2" time="0.000334"/>
+      <testsuite name="App\Card\CardPlayTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardPlayTest.php" tests="3" assertions="6" errors="0" warnings="0" failures="0" skipped="0" time="0.017650">
+        <testcase name="testConstructor" class="App\Card\CardPlayTest" classname="App.Card.CardPlayTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardPlayTest.php" line="14" assertions="2" time="0.000425"/>
+        <testcase name="testDrawCardForPlayer" class="App\Card\CardPlayTest" classname="App.Card.CardPlayTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardPlayTest.php" line="21" assertions="2" time="0.016666"/>
+        <testcase name="testDrawCardForDealer" class="App\Card\CardPlayTest" classname="App.Card.CardPlayTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardPlayTest.php" line="39" assertions="2" time="0.000559"/>
       </testsuite>
-      <testsuite name="App\Card\CardPointsTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardPointsTest.php" tests="1" assertions="208" errors="0" warnings="0" failures="0" skipped="0" time="0.004033">
-        <testcase name="testGetCardPoints" class="App\Card\CardPointsTest" classname="App.Card.CardPointsTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardPointsTest.php" line="15" assertions="208" time="0.004033"/>
+      <testsuite name="App\Card\CardPointsTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardPointsTest.php" tests="1" assertions="208" errors="0" warnings="0" failures="0" skipped="0" time="0.008295">
+        <testcase name="testGetCardPoints" class="App\Card\CardPointsTest" classname="App.Card.CardPointsTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardPointsTest.php" line="15" assertions="208" time="0.008295"/>
       </testsuite>
-      <testsuite name="App\Card\CardTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardTest.php" tests="5" assertions="13" errors="0" warnings="0" failures="0" skipped="0" time="0.001209">
-        <testcase name="testCreateCard" class="App\Card\CardTest" classname="App.Card.CardTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardTest.php" line="15" assertions="1" time="0.000207"/>
-        <testcase name="testTakeCard" class="App\Card\CardTest" classname="App.Card.CardTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardTest.php" line="24" assertions="4" time="0.000297"/>
-        <testcase name="testGetCardValue" class="App\Card\CardTest" classname="App.Card.CardTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardTest.php" line="35" assertions="4" time="0.000292"/>
-        <testcase name="testGetCardAsString" class="App\Card\CardTest" classname="App.Card.CardTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardTest.php" line="47" assertions="1" time="0.000201"/>
-        <testcase name="testGetAllNumbers" class="App\Card\CardTest" classname="App.Card.CardTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardTest.php" line="58" assertions="3" time="0.000211"/>
+      <testsuite name="App\Card\CardTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardTest.php" tests="5" assertions="13" errors="0" warnings="0" failures="0" skipped="0" time="0.002280">
+        <testcase name="testCreateCard" class="App\Card\CardTest" classname="App.Card.CardTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardTest.php" line="15" assertions="1" time="0.000339"/>
+        <testcase name="testTakeCard" class="App\Card\CardTest" classname="App.Card.CardTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardTest.php" line="24" assertions="4" time="0.000770"/>
+        <testcase name="testGetCardValue" class="App\Card\CardTest" classname="App.Card.CardTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardTest.php" line="35" assertions="4" time="0.000475"/>
+        <testcase name="testGetCardAsString" class="App\Card\CardTest" classname="App.Card.CardTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardTest.php" line="47" assertions="1" time="0.000333"/>
+        <testcase name="testGetAllNumbers" class="App\Card\CardTest" classname="App.Card.CardTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Card/CardTest.php" line="58" assertions="3" time="0.000363"/>
       </testsuite>
-      <testsuite name="DiceGraphicTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceGraphicTest.php" tests="1" assertions="6" errors="0" warnings="0" failures="0" skipped="0" time="0.000541">
-        <testcase name="testGetAsString" class="DiceGraphicTest" classname="DiceGraphicTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceGraphicTest.php" line="8" assertions="6" time="0.000541"/>
+      <testsuite name="DiceGraphicTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceGraphicTest.php" tests="1" assertions="6" errors="0" warnings="0" failures="0" skipped="0" time="0.001019">
+        <testcase name="testGetAsString" class="DiceGraphicTest" classname="DiceGraphicTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceGraphicTest.php" line="8" assertions="6" time="0.001019"/>
       </testsuite>
-      <testsuite name="App\Dice\DiceHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceHandTest.php" tests="4" assertions="9" errors="0" warnings="0" failures="0" skipped="0" time="0.001459">
-        <testcase name="testAddDice" class="App\Dice\DiceHandTest" classname="App.Dice.DiceHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceHandTest.php" line="15" assertions="1" time="0.000477"/>
-        <testcase name="testRoll" class="App\Dice\DiceHandTest" classname="App.Dice.DiceHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceHandTest.php" line="35" assertions="2" time="0.000478"/>
-        <testcase name="testGetValues" class="App\Dice\DiceHandTest" classname="App.Dice.DiceHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceHandTest.php" line="57" assertions="3" time="0.000239"/>
-        <testcase name="testGetString" class="App\Dice\DiceHandTest" classname="App.Dice.DiceHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceHandTest.php" line="83" assertions="3" time="0.000265"/>
+      <testsuite name="App\Dice\DiceHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceHandTest.php" tests="4" assertions="9" errors="0" warnings="0" failures="0" skipped="0" time="0.002472">
+        <testcase name="testAddDice" class="App\Dice\DiceHandTest" classname="App.Dice.DiceHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceHandTest.php" line="15" assertions="1" time="0.000710"/>
+        <testcase name="testRoll" class="App\Dice\DiceHandTest" classname="App.Dice.DiceHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceHandTest.php" line="35" assertions="2" time="0.000928"/>
+        <testcase name="testGetValues" class="App\Dice\DiceHandTest" classname="App.Dice.DiceHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceHandTest.php" line="57" assertions="3" time="0.000449"/>
+        <testcase name="testGetString" class="App\Dice\DiceHandTest" classname="App.Dice.DiceHandTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceHandTest.php" line="83" assertions="3" time="0.000385"/>
       </testsuite>
-      <testsuite name="App\Dice\DiceTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceTest.php" tests="1" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.000662">
-        <testcase name="testCreateDice" class="App\Dice\DiceTest" classname="App.Dice.DiceTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceTest.php" line="15" assertions="7" time="0.000662"/>
+      <testsuite name="App\Dice\DiceTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceTest.php" tests="1" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.001178">
+        <testcase name="testCreateDice" class="App\Dice\DiceTest" classname="App.Dice.DiceTest" file="/home/maya/dbwebb-kurser/mvc/me/report/tests/Dice/DiceTest.php" line="15" assertions="7" time="0.001178"/>
       </testsuite>
     </testsuite>
   </testsuite>

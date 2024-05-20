@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
@@ -32,8 +31,14 @@ class CardControllerTest extends WebTestCase
         $client = static::createClient();
 
         $client->request('GET', '/card');
+        $response = $client->getResponse();
 
-        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+        if ($response->getStatusCode() !== 200) {
+            // Log the response content for debugging
+            echo $response->getContent();
+        }
+
+        $this->assertEquals(200, $response->getStatusCode());
     }
 
     public function testApiRoute()
@@ -41,7 +46,13 @@ class CardControllerTest extends WebTestCase
         $client = static::createClient();
 
         $client->request('GET', '/api');
+        $response = $client->getResponse();
 
-        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+        if ($response->getStatusCode() !== 200) {
+            // Log the response content for debugging
+            echo $response->getContent();
+        }
+
+        $this->assertEquals(200, $response->getStatusCode());
     }
 }
