@@ -180,7 +180,6 @@ class CardGameController extends AbstractController
 
         // Dra ett kort från kortleken till handen om handen är tom
         if ($hand->getNumberCards() === 0) {
-            $drawnCard = array_pop($deck);
             $hand->add(new CardGraphic());
         }
 

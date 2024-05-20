@@ -81,7 +81,6 @@ class LibraryController extends AbstractController
 
     #[Route('/library/change/{id}', name: 'book_change')]
     public function changeBook(
-        Request $request,
         ManagerRegistry $doctrine,
         int $id
     ): Response {
