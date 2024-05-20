@@ -11,8 +11,13 @@ class CardControllerTest extends WebTestCase
         $client = static::createClient();
 
         $client->request('GET', '/card');
+        $response = $client->getResponse();
+        
+        if ($response->getStatusCode() !== 200) {
+            file_put_contents('php://stderr', $response->getContent());
+        }
 
-        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+        $this->assertEquals(200, $response->getStatusCode());
     }
 
     public function testApiRoute()
@@ -20,7 +25,12 @@ class CardControllerTest extends WebTestCase
         $client = static::createClient();
 
         $client->request('GET', '/api');
+        $response = $client->getResponse();
+        
+        if ($response->getStatusCode() !== 200) {
+            file_put_contents('php://stderr', $response->getContent());
+        }
 
-        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+        $this->assertEquals(200, $response->getStatusCode());
     }
 }
