@@ -541,4 +541,13 @@ class CardGameController extends AbstractController
 
         return new JsonResponse($response);
     }
+
+    /**
+     * Renders the metrics view.
+     */
+    #[Route("/metrics", name: "metrics", methods: ['GET'])]
+    public function metrics(): Response
+    {
+        return $this->render('metric/metrics.html.twig');
+    }
 }

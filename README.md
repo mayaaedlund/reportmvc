@@ -1,6 +1,9 @@
 My report repo
 =======================
 
+[![Code Coverage](https://scrutinizer-ci.com/g/mayaaedlund/reportmvc/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/mayaaedlund/reportmvc/?branch=main)
+
+
 ![Bildbeskrivning](website.png)
 
 ## Komma igång
