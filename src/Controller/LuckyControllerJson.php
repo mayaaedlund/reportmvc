@@ -5,7 +5,6 @@ namespace App\Controller;
 use App\Card\Card;
 use App\Card\CardGraphic;
 use App\Card\CardHand;
-use App\Card\SortedCards;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -125,7 +124,7 @@ class LuckyControllerJson
     }
 
     #[Route("/api/deck/draw", name: "api_draw")]
-    public function drawCard(Request $request): Response
+    public function drawCard(): Response
     {
         // Starta eller återuppta sessionen
         session_start();
@@ -156,7 +155,7 @@ class LuckyControllerJson
 
 
     #[Route("/api/deck/draw/{number}", name: "draw_number", methods: ['POST', 'GET'])]
-    public function drawCards(Request $request, int $number): Response
+    public function drawCards(int $number): Response
     {
         // Starta eller återuppta sessionen
         session_start();

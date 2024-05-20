@@ -5,7 +5,6 @@ namespace App\Controller;
 use App\Card\Card;
 use App\Card\CardGraphic;
 use App\Card\CardHand;
-use App\Card\SortedCards;
 use App\Card\CardPoints;
 use App\Card\CardPlay;
 
@@ -135,7 +134,6 @@ class CardGameController extends AbstractController
      */
     #[Route("/card/init", name: "card_init_post", methods: ['POST'])]
     public function initCallback(
-        Request $request,
         SessionInterface $session,
         CardGraphic $cardGraphic
     ): Response {
@@ -316,7 +314,7 @@ class CardGameController extends AbstractController
      * Initializes everuthing that needs for the game to start.
      */
     #[Route("/game/start", name: "gamestart", methods: ['GET'])]
-    public function gamestart(SessionInterface $session, CardPoints $cardPoints): Response
+    public function gamestart(SessionInterface $session): Response
     {
 
         $game = new CardPlay();
@@ -452,7 +450,7 @@ class CardGameController extends AbstractController
      * Dealer stays.
      */
     #[Route("/game/dealer/stay", name: "dealer_stay", methods: ['POST', 'GET'])]
-    public function dealerStay(SessionInterface $session, CardPoints $cardPoints, CardPlay $cardPlay): Response
+    public function dealerStay(SessionInterface $session): Response
     {
         $playerPoints = $session->get('points', 0);
         $dealerPoints = $session->get('dealerpoints', 0);
@@ -486,7 +484,7 @@ class CardGameController extends AbstractController
      * Player stays.
      */
     #[Route("/game/player/stay", name: "player_stay", methods: ['POST', 'GET'])]
-    public function playerStay(SessionInterface $session, CardPoints $cardPoints, CardPlay $cardPlay): Response
+    public function playerStay(SessionInterface $session): Response
     {
         $points = $session->get('points', 0);
 
@@ -518,7 +516,7 @@ class CardGameController extends AbstractController
      * Game docs.
      */
     #[Route("/game/doc", name: "gamedoc", methods: ['GET'])]
-    public function gamedock(SessionInterface $session): Response
+    public function gamedock(): Response
     {
 
         return $this->render('card/gamedocs.html.twig');
