@@ -11,10 +11,12 @@
     <p>Detta handlar om att hålla en god kodstil. Att följa kodningsstandarder, vilket inkluderar namngivning, indentering och kommentarer. Det ska gå att läsa och förstå vad koden gör. </p>
 
     <h2>Coverage:</h2>
-    <p>Coverage står för kodtäckning vilket syftar på hur mycket av koden som täcks av olika tester. Om kodtäckningen är hög innebär det en mindre risk för buggar i koden. Att testa sin kod är en viktig egenskap för att kolla om koden fungerar som förväntat.</p>
+    <p>Coverage står för kodtäckning vilket syftar på hur mycket av koden som täcks av olika tester. Om kodtäckningen är hög innebär det en mindre risk för buggar i koden. Att testa sin kod är en viktig egenskap för att kolla om koden fungerar som förväntat. Min kod
+    hade 11% coverage i nuläget (innan arbetet).</p>
 
     <h2>Complexity:</h2>
-    <p>Om koden har hög komplexitet (complexity) kan det vara svårt att förstå koden och därmed också svårt att underhålla den. Långa och invecklade funktioner kan ge hög komplexitet och även göra det svårt att testa och underhålla sin kod.</p>
+    <p>Om koden har hög komplexitet (complexity) kan det vara svårt att förstå koden och därmed också svårt att underhålla den. Långa och invecklade funktioner kan ge hög komplexitet och även göra det svårt att testa och underhålla sin kod.
+    Exempelvis har min CardPlayController hög komplexitet och är också väldigt lång. Den hanterar många olika delar och är svår att förstå vad syftet är.</p>
 
     <h2>Cohesion:</h2>
     <p>Om delarna i en modul eller klass har en hög sammanhållning (cohesion) gör det att koden håller samman bra och gör det lättare att underhålla koden eftersom det inte påverkar större delar av koden. </p>
@@ -40,7 +42,6 @@
         <img src="https://scrutinizer-ci.com/g/mayaaedlund/reportmvc/badges/coverage.png?b=main" alt="Coverage Badge">
     </a>
    
-
     <a href="https://scrutinizer-ci.com/g/mayaaedlund/reportmvc/inspections/5c760764-71d9-40d9-a198-b641d4b6626a/log" target="_blank">
         <img src="https://scrutinizer-ci.com/g/mayaaedlund/reportmvc/badges/build.png?b=main" alt="Coverage Badge">
     </a>
@@ -50,21 +51,31 @@
     <h1>Förbättringar</h1>
     <h2> Fixa Issues </h2>
     <p> I rapporten stod det att majoriteten av mina issues är unused code. Om jag rättar till dessa leder det direkt till en renare och mer lättläst kod </p>
-    <p> Efter issues:</p>
-    <p> Jag gick igenom mina issues och tog bort oanvänd kod och buggar. 
-
+    
     <h2> Minska komplexitet </h2>
     <p>Genom att minska komplexiteten genom att exemeplvis bryta upp mina klasser kommer min kod bli snyggare och lättare att underhålla samt testa.</p>
-    <p>efer: </p>
     
     <h2> Öka kodtäckning </h2>
     <p>Genom att skapa fler tester och öka coverage blir min kod renare, enklare att förstå och mindre komplex.</p>
-    <p> Efter: </p>
-
-
-    <h2> Rapporten efter: </p>
 
     <h1>Diskussion</h1>
+    <p> Att arbeta på detta sätt och använda sig av verktyg som Scrutinizer och PHP Metrics är ett effektivt och snabbt sätt att arbeta för
+    snygg och ren kod. Det finns många fördelar, som att de analyserar hela din kod och kan upptäcka saker som själv är svårt att se, exemeplvis
+    oanvänd kod. Analyserna är detaljerade och ger mycket information om kodens struktur vilket är bra för utvecklare. Den analyserar också ny kod direkt
+    vilket är bra för då upptäcks felen snabbt vid utveckling. Jag tror att det hade vart ett bra verktyg att ha från starten av sitt kodskrivande, för då
+    får man det tydligare vad som ska ändras i sin kod och hur man ska skriva den mindre komplex. </p>
+    
+    <p> Jag gick igenom mina issues och tog bort all oanvänd kod och buggar som jag kunde fixa. Totalt löstes 17 issues. Jag lyckades också minska mina violations i phpmetrics. </p>
+
+    <p>För att minska komplexiteten bröt jag upp mina controllers. Min CardGameController hade extremt hög komplexitet
+    och var också extremt lång. Jag delade då upp den i 3 Controller, en för att dra kort till sin kortlek, en för att
+    ha saker som sesssion, kolla korten och så vidare och en egen för enbart kortspelet 21. Detta gör min kod mycket mer förståerlig
+    och lättläst för andra och bidrar därmed till snygg kod.</p>
+
+    <p> Detta var största problemet då majoriteten av testerna som saknas är för Controllerna. Jag försökte skapa tester
+    via webtestcase och de gick igenom lokalt men inte i Scrutinizer. I brist på tid gjorde jag inte mycket mer än att förbättra mina
+    tester för klasserna, och fick därmed 1% mer coverage.</p>
+
 </div>
 
 {% endblock %}

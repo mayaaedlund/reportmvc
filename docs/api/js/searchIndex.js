@@ -166,70 +166,50 @@ Search.appendIndex(
             "summary": "Points\u0020associated\u0020with\u0020card\u0020values.",
             "url": "classes/App-Card-CardPoints.html#property_points"
         },                {
+            "fqsen": "\\App\\Controller\\CardController",
+            "name": "CardController",
+            "summary": "",
+            "url": "classes/App-Controller-CardController.html"
+        },                {
+            "fqsen": "\\App\\Controller\\CardController\u003A\u003Ahome\u0028\u0029",
+            "name": "home",
+            "summary": "",
+            "url": "classes/App-Controller-CardController.html#method_home"
+        },                {
+            "fqsen": "\\App\\Controller\\CardController\u003A\u003Aapi\u0028\u0029",
+            "name": "api",
+            "summary": "",
+            "url": "classes/App-Controller-CardController.html#method_api"
+        },                {
+            "fqsen": "\\App\\Controller\\CardController\u003A\u003Asession\u0028\u0029",
+            "name": "session",
+            "summary": "",
+            "url": "classes/App-Controller-CardController.html#method_session"
+        },                {
+            "fqsen": "\\App\\Controller\\CardController\u003A\u003AresetSession\u0028\u0029",
+            "name": "resetSession",
+            "summary": "",
+            "url": "classes/App-Controller-CardController.html#method_resetSession"
+        },                {
+            "fqsen": "\\App\\Controller\\CardController\u003A\u003AtestCard\u0028\u0029",
+            "name": "testCard",
+            "summary": "Test\u0020route.",
+            "url": "classes/App-Controller-CardController.html#method_testCard"
+        },                {
+            "fqsen": "\\App\\Controller\\CardController\u003A\u003AdeckCard\u0028\u0029",
+            "name": "deckCard",
+            "summary": "Renders\u0020the\u0020organized\u0020deck\u0020view.",
+            "url": "classes/App-Controller-CardController.html#method_deckCard"
+        },                {
+            "fqsen": "\\App\\Controller\\CardController\u003A\u003AShuffleCard\u0028\u0029",
+            "name": "ShuffleCard",
+            "summary": "Renders\u0020the\u0020shuffled\u0020deck\u0020view.",
+            "url": "classes/App-Controller-CardController.html#method_ShuffleCard"
+        },                {
             "fqsen": "\\App\\Controller\\CardGameController",
             "name": "CardGameController",
             "summary": "",
             "url": "classes/App-Controller-CardGameController.html"
-        },                {
-            "fqsen": "\\App\\Controller\\CardGameController\u003A\u003Ahome\u0028\u0029",
-            "name": "home",
-            "summary": "",
-            "url": "classes/App-Controller-CardGameController.html#method_home"
-        },                {
-            "fqsen": "\\App\\Controller\\CardGameController\u003A\u003Aapi\u0028\u0029",
-            "name": "api",
-            "summary": "",
-            "url": "classes/App-Controller-CardGameController.html#method_api"
-        },                {
-            "fqsen": "\\App\\Controller\\CardGameController\u003A\u003Asession\u0028\u0029",
-            "name": "session",
-            "summary": "",
-            "url": "classes/App-Controller-CardGameController.html#method_session"
-        },                {
-            "fqsen": "\\App\\Controller\\CardGameController\u003A\u003AresetSession\u0028\u0029",
-            "name": "resetSession",
-            "summary": "",
-            "url": "classes/App-Controller-CardGameController.html#method_resetSession"
-        },                {
-            "fqsen": "\\App\\Controller\\CardGameController\u003A\u003AtestCard\u0028\u0029",
-            "name": "testCard",
-            "summary": "Test\u0020route.",
-            "url": "classes/App-Controller-CardGameController.html#method_testCard"
-        },                {
-            "fqsen": "\\App\\Controller\\CardGameController\u003A\u003AdeckCard\u0028\u0029",
-            "name": "deckCard",
-            "summary": "Renders\u0020the\u0020organized\u0020deck\u0020view.",
-            "url": "classes/App-Controller-CardGameController.html#method_deckCard"
-        },                {
-            "fqsen": "\\App\\Controller\\CardGameController\u003A\u003AShuffleCard\u0028\u0029",
-            "name": "ShuffleCard",
-            "summary": "Renders\u0020the\u0020shuffled\u0020deck\u0020view.",
-            "url": "classes/App-Controller-CardGameController.html#method_ShuffleCard"
-        },                {
-            "fqsen": "\\App\\Controller\\CardGameController\u003A\u003Ainit\u0028\u0029",
-            "name": "init",
-            "summary": "Renders\u0020the\u0020card\u0020view.",
-            "url": "classes/App-Controller-CardGameController.html#method_init"
-        },                {
-            "fqsen": "\\App\\Controller\\CardGameController\u003A\u003AinitCallback\u0028\u0029",
-            "name": "initCallback",
-            "summary": "Initialize\u0020the\u0020session\u0020for\u0020the\u0020card\u0020deck.",
-            "url": "classes/App-Controller-CardGameController.html#method_initCallback"
-        },                {
-            "fqsen": "\\App\\Controller\\CardGameController\u003A\u003Astart\u0028\u0029",
-            "name": "start",
-            "summary": "Draw\u0020card\u0020to\u0020deck.",
-            "url": "classes/App-Controller-CardGameController.html#method_start"
-        },                {
-            "fqsen": "\\App\\Controller\\CardGameController\u003A\u003AaddCard\u0028\u0029",
-            "name": "addCard",
-            "summary": "Add\u0020card\u0020to\u0020deck.",
-            "url": "classes/App-Controller-CardGameController.html#method_addCard"
-        },                {
-            "fqsen": "\\App\\Controller\\CardGameController\u003A\u003Adraw_multiple\u0028\u0029",
-            "name": "draw_multiple",
-            "summary": "Draw\u0020a\u0020number\u0020of\u0020cards.",
-            "url": "classes/App-Controller-CardGameController.html#method_draw_multiple"
         },                {
             "fqsen": "\\App\\Controller\\CardGameController\u003A\u003Agame\u0028\u0029",
             "name": "game",
@@ -275,6 +255,11 @@ Search.appendIndex(
             "name": "apigame",
             "summary": "Api\u0020game,\u0020see\u0020leaderboard.",
             "url": "classes/App-Controller-CardGameController.html#method_apigame"
+        },                {
+            "fqsen": "\\App\\Controller\\CardGameController\u003A\u003Ametrics\u0028\u0029",
+            "name": "metrics",
+            "summary": "Renders\u0020the\u0020metrics\u0020view.",
+            "url": "classes/App-Controller-CardGameController.html#method_metrics"
         },                {
             "fqsen": "\\App\\Controller\\DiceGameController",
             "name": "DiceGameController",
@@ -325,6 +310,36 @@ Search.appendIndex(
             "name": "save",
             "summary": "",
             "url": "classes/App-Controller-DiceGameController.html#method_save"
+        },                {
+            "fqsen": "\\App\\Controller\\DrawCardController",
+            "name": "DrawCardController",
+            "summary": "",
+            "url": "classes/App-Controller-DrawCardController.html"
+        },                {
+            "fqsen": "\\App\\Controller\\DrawCardController\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "Renders\u0020the\u0020card\u0020view.",
+            "url": "classes/App-Controller-DrawCardController.html#method_init"
+        },                {
+            "fqsen": "\\App\\Controller\\DrawCardController\u003A\u003AinitCallback\u0028\u0029",
+            "name": "initCallback",
+            "summary": "Initialize\u0020the\u0020session\u0020for\u0020the\u0020card\u0020deck.",
+            "url": "classes/App-Controller-DrawCardController.html#method_initCallback"
+        },                {
+            "fqsen": "\\App\\Controller\\DrawCardController\u003A\u003Astart\u0028\u0029",
+            "name": "start",
+            "summary": "Draw\u0020card\u0020to\u0020deck.",
+            "url": "classes/App-Controller-DrawCardController.html#method_start"
+        },                {
+            "fqsen": "\\App\\Controller\\DrawCardController\u003A\u003AaddCard\u0028\u0029",
+            "name": "addCard",
+            "summary": "Add\u0020card\u0020to\u0020deck.",
+            "url": "classes/App-Controller-DrawCardController.html#method_addCard"
+        },                {
+            "fqsen": "\\App\\Controller\\DrawCardController\u003A\u003Adraw_multiple\u0028\u0029",
+            "name": "draw_multiple",
+            "summary": "Draw\u0020a\u0020number\u0020of\u0020cards.",
+            "url": "classes/App-Controller-DrawCardController.html#method_draw_multiple"
         },                {
             "fqsen": "\\App\\Controller\\LibraryController",
             "name": "LibraryController",
@@ -506,15 +521,25 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/App-Controller-ProductController.html#method_viewAllProduct"
         },                {
-            "fqsen": "\\App\\Controller\\ProductController\u003A\u003AviewProductWithMinimumValue\u0028\u0029",
-            "name": "viewProductWithMinimumValue",
+            "fqsen": "\\App\\Controller\\ProjectController",
+            "name": "ProjectController",
             "summary": "",
-            "url": "classes/App-Controller-ProductController.html#method_viewProductWithMinimumValue"
+            "url": "classes/App-Controller-ProjectController.html"
         },                {
-            "fqsen": "\\App\\Controller\\ProductController\u003A\u003AshowProductByMinimumValue\u0028\u0029",
-            "name": "showProductByMinimumValue",
+            "fqsen": "\\App\\Controller\\ProjectController\u003A\u003Ahome\u0028\u0029",
+            "name": "home",
             "summary": "",
-            "url": "classes/App-Controller-ProductController.html#method_showProductByMinimumValue"
+            "url": "classes/App-Controller-ProjectController.html#method_home"
+        },                {
+            "fqsen": "\\App\\Controller\\ProjectController\u003A\u003Aabout\u0028\u0029",
+            "name": "about",
+            "summary": "",
+            "url": "classes/App-Controller-ProjectController.html#method_about"
+        },                {
+            "fqsen": "\\App\\Controller\\ProjectController\u003A\u003Astatistic\u0028\u0029",
+            "name": "statistic",
+            "summary": "",
+            "url": "classes/App-Controller-ProjectController.html#method_statistic"
         },                {
             "fqsen": "\\App\\Dice\\Dice",
             "name": "Dice",
@@ -560,6 +585,11 @@ Search.appendIndex(
             "name": "getAsString",
             "summary": "",
             "url": "classes/App-Dice-DiceGraphic.html#method_getAsString"
+        },                {
+            "fqsen": "\\App\\Dice\\DiceGraphic\u003A\u003AsetValue\u0028\u0029",
+            "name": "setValue",
+            "summary": "",
+            "url": "classes/App-Dice-DiceGraphic.html#method_setValue"
         },                {
             "fqsen": "\\App\\Dice\\DiceGraphic\u003A\u003A\u0024representation",
             "name": "representation",
