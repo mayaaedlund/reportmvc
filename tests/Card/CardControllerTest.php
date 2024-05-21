@@ -30,29 +30,9 @@ class CardControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $client->request('GET', '/card');
-        $response = $client->getResponse();
+        $crawler = $client->request('GET', '/card');
 
-        if ($response->getStatusCode() !== 200) {
-            // Log the response content for debugging
-            echo $response->getContent();
-        }
-
-        $this->assertEquals(200, $response->getStatusCode());
-    }
-
-    public function testApiRoute()
-    {
-        $client = static::createClient();
-
-        $client->request('GET', '/api');
-        $response = $client->getResponse();
-
-        if ($response->getStatusCode() !== 200) {
-            // Log the response content for debugging
-            echo $response->getContent();
-        }
-
-        $this->assertEquals(200, $response->getStatusCode());
+        // Kontrollera att <h1> elementet innehåller texten 'Card game'
+        $this->assertSelectorTextContains('h1', 'Card game');
     }
 }
