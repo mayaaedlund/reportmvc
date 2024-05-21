@@ -4,12 +4,75 @@
 
 {% block body %}
 <div class="content">
-    <img src="{{ asset('img/ocean.jpg') }}" alt="" class="image-wide">
     <h1>Statistik</h1>
+    <h2> Marint Skydd efter havsområde</h2>
+    <p> Andel i procent av total havsyta. </p>
+    <div id="table-container"></div> <!-- Här kommer tabellen att visas -->
+    <p> Senast uppdaterad: 2023-12-11 </p>
+    <p> Källa: Skyddad Natur, SCB och Skydd av marina miljöer efter region. </p>
 
-    <p> Bevara och nyttja haven och de marina resurserna på ett hållbart sätt för en hållbar utveckling.</p>
-    <div class="image-container">
-        <img src="{{ asset('img/hav.png') }}" alt="" class="image-size">
-    </div>
+
+    <h2> Bedömning av hållbart nyttjande bestånd av fisk och skaldjur.</h2>
+    <p> Antal i procent av bedömda bestånd. </p>
+
+    <p> Källa: Hållbart nyttjade fisk- och skaldjursbestånd i kust och hav, SVERIGES MILJÖMÅL, Havs- och vattenmyndigheten. </p>
+
+
+
+    <h2> Coverage of protected areas in relation to marine areas (Exclusive Economic Zones)(%) </h1>
+    <p> Europa och Nordamerika = röd, Öst och Sydostasien = blå. </p>
+
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Hämta data från servern
+        fetch('{{ path('marine_data') }}')
+            .then(response => response.json())
+            .then(data => {
+                // Funktion för att skapa en tabell
+                function createTable(data) {
+                    const table = document.createElement('table');
+                    table.classList.add('stats-table'); // Lägg till en klass för CSS-styling
+
+                    // Skapa header-rad
+                    const thead = table.createTHead();
+                    const headerRow = thead.insertRow();
+                    const headers = ['Region', '2022', '2021', '2020', '2019', '2018'];
+                    headers.forEach(headerText => {
+                        const th = document.createElement('th');
+                        th.appendChild(document.createTextNode(headerText));
+                        headerRow.appendChild(th);
+                    });
+
+                    // Skapa body-rad
+                    const tbody = table.createTBody();
+                    data.forEach(item => {
+                        const row = tbody.insertRow();
+                        const values = [
+                            item.region, 
+                            item.year2022, 
+                            item.year2021, 
+                            item.year2020, 
+                            item.year2019, 
+                            item.year2018
+                        ];
+                        values.forEach(text => {
+                            const cell = row.insertCell();
+                            cell.appendChild(document.createTextNode(text));
+                        });
+                    });
+
+                    return table;
+                }
+
+                // Hämta div-elementet där tabellen ska visas
+                const tableContainer = document.getElementById('table-container');
+                // Skapa tabellen och lägg till den i div-elementet
+                const table = createTable(data);
+                tableContainer.appendChild(table);
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    });
+</script>
 {% endblock %}
