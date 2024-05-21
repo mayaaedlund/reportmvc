@@ -66,7 +66,7 @@ class CardPlay
      *
      * @return int The updated points of the player.
      */
-    public function drawCardForPlayer(/** @scrutinizer ignore-unused */ CardHand $playerHand, array &$deck, CardPoints $cardPoints, int $points, $drawnCard): int
+    public function drawCardForPlayer(/** @scrutinizer ignore-unused */ CardHand $playerHand,/** @scrutinizer ignore-unused */ array &$deck, CardPoints $cardPoints, int $points, $drawnCard): int
     {
         // Calculate points for the drawn card
         $pointsForDrawnCard = $cardPoints->getPoints($drawnCard);

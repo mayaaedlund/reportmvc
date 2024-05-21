@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+body {
+    background-color: #d3f4ff;
+    background-size: cover;
+    color: #525252;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 80vh;
+
+}
+
+.image-wide {
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+}
+
+
+.content {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.site-header {
+    text-align: center; /* Centrera texten */
+    margin: 0; /* Ta bort eventuell marginal */
+    padding: 0; /* Ta bort eventuell padding */
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-size: 80px;
+    font-style: normal;
+    color: #59aef8d5;
+}
+
+.site-title {
+    font-size: 36px; /* Ange önskad storlek på texten */
+}
+
+
+h1 {
+    border-bottom: 4px double #ccc;
+    color: #253746;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Navbar */
+/* Navbar */
+nav {
+    display: flex; /* Använd flexbox */
+    justify-content: flex-end; /* Flytta navbaren till höger */
+    padding: 10px 40px 10px 10px; /* Lägg till mer padding på höger sida */
+}
+
+nav ul {
+    list-style-type: none; /* Ta bort punktlistan */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Använd flexbox för att centrera länkarna vertikalt */
+}
+
+nav ul li {
+    margin-right: 20px; /* Lägg till lite mellanrum mellan listelementen */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Ta bort högermarginalen från det sista listelementet */
+}
+
+nav ul li a {
+    text-decoration: none; /* Ta bort understrykning från länkarna */
+    color: rgb(64, 64, 64); /* Färg på länkarna */
+    font-weight: bold; /* Fet text */
+}
+
+nav ul li a:hover {
+    color: rgb(64, 64, 64);  /* Färg på länkarna när de är överhoppade */
+}
+
+
+/* Images */
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centrera innehållet horisontellt */
+}
+
+.image-size {
+    align-self: self-start;
+    width: 500px; /* Ange den önskade bredden */
+    height: auto; /* Sätt höjden automatiskt för att bevara bildens proportioner */
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    margin-top: auto;
+    background-color: #d3f4ff;
+    color: rgb(76, 150, 207); /* Textfärg för footern */
+    padding: 20px 0; /* Lägg till padding över och under footern */
+    text-align: center; /* Centrera texten i footern */
+}
+
+.footer-content {
+    max-width: 1200px; /* Maxbredd för footern innehåll */
+    margin: 0 auto; /* Centrera footern innehåll horisontellt */
+}
+
+.footer-links {
+    list-style-type: none; /* Ta bort punktlistan från ul */
+    padding: 0; /* Ta bort padding från ul */
+}
+
+.footer-links li {
+    display: inline; /* Visa listelementen i en rad */
+    margin-right: 20px; /* Lägg till lite mellanrum mellan listelementen */
+}
+
+.footer-links li:last-child {
+    margin-right: 0; /* Ta bort högermarginalen från det sista listelementet */
+}
+
+.footer-links a {
+    color: white; /* Färg på länkarna */
+    text-decoration: none; /* Ta bort understrykning från länkarna */
+}
+
+.footer-links a:hover {
+    color: lightgray; /* Färg på länkarna när de är överhoppade */
+}
+
+.social-media-links {
+    margin-top: 20px; /* Lägg till lite mellanrum mellan länkarna och kontakten */
+}
+
+.social-link {
+    display: inline-block; /* Lägg till inline-block för att ge länkarna en horisontell layout */
+    margin-right: 10px; /* Lägg till lite mellanrum mellan länkarna */
+    color: white; /* Färg på länkarna */
+    text-decoration: none; /* Ta bort understrykning från länkarna */
+}
+
+.social-link:hover {
+    color: lightgray; /* Färg på länkarna när de är överhoppade */
+}
+
+
+/* KNAPPAR */
+.link-button {
+    display: inline-block;
+    padding: 20px 80px;
+    background-color: #253746;
+    color: #d6e0e5;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.link-button:hover {
+    background-color: #555;
+}
+
+/* KNAPPAR */
+.game-button {
+    padding: 20px 80px;
+    background-color: #253746;
+    color: #d6e0e5;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.column {
+    width: 45%;
+}
+
+/**
+* kmom02
+*/
+/*
+body {
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #eee;
+    font-size: 2em;
+}
+*/
+main {
+    padding: 0.5em;
+}
+
+input {
+    font-size: 1em;
+}
+
+h1 {
+    border-bottom: 4px double green;
+}
+
+.die {
+    font-size: 3em;
+}
+
+
+ul.dicearea {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.dicearea li {
+    display: inline;
+}
+
+.flash-notice {
+    padding: 0.5em;
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+.flash-notice:before {
+    content: "ⓘ";
+}
+
+.flash-warning {
+    padding: 0.5em;
+    color: #0127e8;
+    background-color: #f9ea43;
+    border-color: #ffeeba;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.flash-warning:before {
+    content: "⚠";
+}
+
+/* Card */
+.card {
+    font-size: 5em;
+}
+
+
+ul.cardarea {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.cardarea li {
+    display: inline;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.name {
+    border-top: 20px;
+    color: #003c7c;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.gameplan {
+    background-color: rgb(170, 184, 170);
+}
+
+.center {
+    text-align: center;
+}
+
+/* Styla knapparna */
+form {
+    text-align: center;
+}
+
+input[type="submit"], button {
+    padding: 10px 20px;
+    background-color: #19381a; 
+    color: white; 
+    border: none; 
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer; 
+    margin: 10px;
+}
+
+input[name="playerStay"], button[type="submit"] {
+    background-color: #f44336; /* Bakgrundsfärg för "STANNA" knappen */
+}
+input[type="submit"]:hover, button:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Styla kortcontainer */
+.card-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    background-color: black;
+}
+
+.image-size-big {
+    width: 400px;
+    height: auto;
+}
