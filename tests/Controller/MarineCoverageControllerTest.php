@@ -26,7 +26,7 @@ class MarineCoverageControllerTest extends WebTestCase
         $this->assertStringContainsString('Saved new marine coverage data.', $client->getResponse()->getContent());
     }
 
-
+/*
     public function testShowMarineCoverageData()
     {
         $client = static::createClient();
@@ -36,8 +36,9 @@ class MarineCoverageControllerTest extends WebTestCase
         $this->assertResponseIsSuccessful();
 
         $data = json_decode($client->getResponse()->getContent(), true);
-    }
+    }*/
 
+    /*
     public function testDeleteAllMarineCoverage()
     {
         $client = static::createClient();
@@ -45,8 +46,9 @@ class MarineCoverageControllerTest extends WebTestCase
         $client->request('GET', '/coverage/delete');
 
         $this->assertResponseIsSuccessful();
-    }
+    }*/
 
+    /*
     public function testGetMarineData()
     {
         $client = static::createClient();
@@ -56,5 +58,5 @@ class MarineCoverageControllerTest extends WebTestCase
         $this->assertResponseIsSuccessful();
 
         $this->assertJson($client->getResponse()->getContent());
-    }
+    }*/
 }

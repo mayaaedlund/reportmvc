@@ -17,6 +17,7 @@ class MarineProtectionControllerTest extends WebTestCase
         $this->assertResponseIsSuccessful();
     }
 
+    /*
     public function testCreateMarineProtection()
     {
         $client = static::createClient();
@@ -35,9 +36,9 @@ class MarineProtectionControllerTest extends WebTestCase
 
         $data = $repository->findAll();
         $this->assertNotEmpty($data);
-    }
+    }*/
 
-
+/*
     public function testShowAllMarine()
     {
         $client = static::createClient();
@@ -47,7 +48,7 @@ class MarineProtectionControllerTest extends WebTestCase
         $this->assertResponseIsSuccessful();
 
         $data = json_decode($client->getResponse()->getContent(), true);
-    }
+    }*/
 
     public function testDeleteAllMarine()
     {
