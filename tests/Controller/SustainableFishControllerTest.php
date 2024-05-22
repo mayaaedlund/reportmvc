@@ -70,4 +70,5 @@ class SustainableFishControllerTest extends WebTestCase
         $expectedMessage = 'All sustainable fish data has been deleted.';
         $this->assertStringContainsString($expectedMessage, $responseContent);
     }
+    
 }
