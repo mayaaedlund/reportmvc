@@ -16,7 +16,6 @@ class LibraryControllerTest extends WebTestCase
         $this->assertResponseIsSuccessful();
     }
 
-    /*
     public function testViewAllLibrary()
     {
         $client = static::createClient();
@@ -24,16 +23,15 @@ class LibraryControllerTest extends WebTestCase
         $client->request('GET', '/library/view');
 
         $this->assertResponseIsSuccessful();
-    }*/
+    }
 
-    /*
     public function testShowBookById()
     {
         $client = static::createClient();
         $client->request('GET', '/library/show/4');
 
         $this->assertResponseIsSuccessful();
-    }*/
+    }
 
     public function testLibraryDelete()
     {
@@ -43,7 +41,7 @@ class LibraryControllerTest extends WebTestCase
 
         $this->assertResponseIsSuccessful();
     }
-/*
+
     public function testChangeBook()
     {
         $client = static::createClient();
@@ -51,7 +49,7 @@ class LibraryControllerTest extends WebTestCase
         $client->request('GET', '/library/change/4');
 
         $this->assertResponseIsSuccessful();
-    }*/
+    }
 
     public function testLibraryAdd()
     {
@@ -62,7 +60,6 @@ class LibraryControllerTest extends WebTestCase
         $this->assertResponseIsSuccessful();
     }
 
-/*
     public function testApiLibraryBooks()
     {
         $client = static::createClient();
@@ -71,5 +68,5 @@ class LibraryControllerTest extends WebTestCase
 
         $this->assertResponseIsSuccessful();
         $this->assertJson($client->getResponse()->getContent());
-    }*/
+    }
 }

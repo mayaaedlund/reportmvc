@@ -16,7 +16,6 @@ class ProductControllerTest extends WebTestCase
         $this->assertResponseIsSuccessful();
     }
 
-    /*
     public function testCreateProduct()
     {
         $client = static::createClient();
@@ -24,9 +23,9 @@ class ProductControllerTest extends WebTestCase
         $client->request('GET', '/product/create');
 
         $this->assertResponseIsSuccessful();
-    }*/
+    }
 
-    /*
+    
     public function testShowAllProduct()
     {
         $client = static::createClient();
@@ -35,8 +34,8 @@ class ProductControllerTest extends WebTestCase
 
         $this->assertResponseIsSuccessful();
         $this->assertJson($client->getResponse()->getContent());
-    }*/
-/*
+    }
+
     public function testShowProductById()
     {
         $client = static::createClient();
@@ -45,8 +44,8 @@ class ProductControllerTest extends WebTestCase
 
         $this->assertResponseIsSuccessful();
         $this->assertJson($client->getResponse()->getContent());
-    }*/
-/*
+    }
+
     public function testViewAllProduct()
     {
         $client = static::createClient();
@@ -54,7 +53,7 @@ class ProductControllerTest extends WebTestCase
         $client->request('GET', '/product/view');
     
         $this->assertResponseIsSuccessful();
-    }*/
+    }
 
 }
 
