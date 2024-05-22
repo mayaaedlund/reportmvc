@@ -13,6 +13,11 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class MarineProtectionController extends AbstractController
 {
+    /**
+     * Renders the marine protection index page.
+     *
+     * @return Response The response containing the marine protection index page.
+     */
     #[Route('/marine/protection', name: 'app_marine_protection')]
     public function index(): Response
     {
@@ -21,6 +26,12 @@ class MarineProtectionController extends AbstractController
         ]);
     }
 
+    /**
+     * Creates marine protection data.
+     *
+     * @param ManagerRegistry $doctrine The Doctrine manager registry.
+     * @return Response The response indicating the success of the operation.
+     */
     #[Route('/marine/create', name: 'marine_protection_create')]
     public function createMarineProtection(ManagerRegistry $doctrine): Response
     {
@@ -74,6 +85,12 @@ class MarineProtectionController extends AbstractController
         return new Response('Saved new marine protection data.');
     }
 
+    /**
+     * Shows all marine protection data.
+     *
+     * @param MarineProtectionRepository $marineProtectionRepository The repository for marine protection.
+     * @return JsonResponse The JSON response containing all marine protection data.
+     */
     #[Route('/marine/show', name: 'marine_show')]
     public function showAllMarine(
         MarineProtectionRepository $marineprotectionRepository
@@ -84,6 +101,12 @@ class MarineProtectionController extends AbstractController
         return $this->json($marine);
     }
 
+    /**
+     * Deletes all marine protection data.
+     *
+     * @param ManagerRegistry $doctrine The Doctrine manager registry.
+     * @return Response The response indicating the success of the operation.
+     */
     #[Route('/marine/delete', name: 'marine_delete_all')]
     public function deleteAllMarine(ManagerRegistry $doctrine): Response
     {
@@ -103,6 +126,12 @@ class MarineProtectionController extends AbstractController
         return new Response('All marine protection data has been deleted.');
     }
 
+    /**
+     * Retrieves marine protection data as JSON.
+     *
+     * @param MarineProtectionRepository $marineProtectionRepository The repository for marine protection.
+     * @return JsonResponse The JSON response containing marine protection data.
+     */
     #[Route('/marine/data', name: 'marine_data')]
     public function getMarineData(MarineProtectionRepository $marineProtectionRepository): JsonResponse
     {

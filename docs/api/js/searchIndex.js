@@ -481,6 +481,66 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/App-Controller-LuckyControllerTwig.html#method_report"
         },                {
+            "fqsen": "\\App\\Controller\\MarineCoverageController",
+            "name": "MarineCoverageController",
+            "summary": "",
+            "url": "classes/App-Controller-MarineCoverageController.html"
+        },                {
+            "fqsen": "\\App\\Controller\\MarineCoverageController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "Renders\u0020the\u0020shuffled\u0020deck\u0020view.",
+            "url": "classes/App-Controller-MarineCoverageController.html#method_index"
+        },                {
+            "fqsen": "\\App\\Controller\\MarineCoverageController\u003A\u003AcreateMarineCoverageData\u0028\u0029",
+            "name": "createMarineCoverageData",
+            "summary": "Creates\u0020marine\u0020coverage\u0020data.",
+            "url": "classes/App-Controller-MarineCoverageController.html#method_createMarineCoverageData"
+        },                {
+            "fqsen": "\\App\\Controller\\MarineCoverageController\u003A\u003AshowMarineCoverageData\u0028\u0029",
+            "name": "showMarineCoverageData",
+            "summary": "Shows\u0020marine\u0020coverage\u0020data.",
+            "url": "classes/App-Controller-MarineCoverageController.html#method_showMarineCoverageData"
+        },                {
+            "fqsen": "\\App\\Controller\\MarineCoverageController\u003A\u003AdeleteAllMarineCoverage\u0028\u0029",
+            "name": "deleteAllMarineCoverage",
+            "summary": "Deletes\u0020all\u0020marine\u0020coverage\u0020data.",
+            "url": "classes/App-Controller-MarineCoverageController.html#method_deleteAllMarineCoverage"
+        },                {
+            "fqsen": "\\App\\Controller\\MarineCoverageController\u003A\u003AgetMarineData\u0028\u0029",
+            "name": "getMarineData",
+            "summary": "Retrieves\u0020marine\u0020coverage\u0020data\u0020as\u0020JSON.",
+            "url": "classes/App-Controller-MarineCoverageController.html#method_getMarineData"
+        },                {
+            "fqsen": "\\App\\Controller\\MarineProtectionController",
+            "name": "MarineProtectionController",
+            "summary": "",
+            "url": "classes/App-Controller-MarineProtectionController.html"
+        },                {
+            "fqsen": "\\App\\Controller\\MarineProtectionController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "Renders\u0020the\u0020marine\u0020protection\u0020index\u0020page.",
+            "url": "classes/App-Controller-MarineProtectionController.html#method_index"
+        },                {
+            "fqsen": "\\App\\Controller\\MarineProtectionController\u003A\u003AcreateMarineProtection\u0028\u0029",
+            "name": "createMarineProtection",
+            "summary": "Creates\u0020marine\u0020protection\u0020data.",
+            "url": "classes/App-Controller-MarineProtectionController.html#method_createMarineProtection"
+        },                {
+            "fqsen": "\\App\\Controller\\MarineProtectionController\u003A\u003AshowAllMarine\u0028\u0029",
+            "name": "showAllMarine",
+            "summary": "Shows\u0020all\u0020marine\u0020protection\u0020data.",
+            "url": "classes/App-Controller-MarineProtectionController.html#method_showAllMarine"
+        },                {
+            "fqsen": "\\App\\Controller\\MarineProtectionController\u003A\u003AdeleteAllMarine\u0028\u0029",
+            "name": "deleteAllMarine",
+            "summary": "Deletes\u0020all\u0020marine\u0020protection\u0020data.",
+            "url": "classes/App-Controller-MarineProtectionController.html#method_deleteAllMarine"
+        },                {
+            "fqsen": "\\App\\Controller\\MarineProtectionController\u003A\u003AgetMarineData\u0028\u0029",
+            "name": "getMarineData",
+            "summary": "Retrieves\u0020marine\u0020protection\u0020data\u0020as\u0020JSON.",
+            "url": "classes/App-Controller-MarineProtectionController.html#method_getMarineData"
+        },                {
             "fqsen": "\\App\\Controller\\ProductController",
             "name": "ProductController",
             "summary": "",
@@ -528,18 +588,58 @@ Search.appendIndex(
         },                {
             "fqsen": "\\App\\Controller\\ProjectController\u003A\u003Ahome\u0028\u0029",
             "name": "home",
-            "summary": "",
+            "summary": "Renders\u0020the\u0020home\u0020page.",
             "url": "classes/App-Controller-ProjectController.html#method_home"
         },                {
             "fqsen": "\\App\\Controller\\ProjectController\u003A\u003Aabout\u0028\u0029",
             "name": "about",
-            "summary": "",
+            "summary": "Renders\u0020the\u0020about\u0020page.",
             "url": "classes/App-Controller-ProjectController.html#method_about"
         },                {
             "fqsen": "\\App\\Controller\\ProjectController\u003A\u003Astatistic\u0028\u0029",
             "name": "statistic",
-            "summary": "",
+            "summary": "Renders\u0020the\u0020statistic\u0020page.",
             "url": "classes/App-Controller-ProjectController.html#method_statistic"
+        },                {
+            "fqsen": "\\App\\Controller\\ProjectController\u003A\u003Aprojapi\u0028\u0029",
+            "name": "projapi",
+            "summary": "Renders\u0020the\u0020project\u0020API\u0020page.",
+            "url": "classes/App-Controller-ProjectController.html#method_projapi"
+        },                {
+            "fqsen": "\\App\\Controller\\ProjectController\u003A\u003Adatabase\u0028\u0029",
+            "name": "database",
+            "summary": "Renders\u0020the\u0020database\u0020page.",
+            "url": "classes/App-Controller-ProjectController.html#method_database"
+        },                {
+            "fqsen": "\\App\\Controller\\SustainableFishController",
+            "name": "SustainableFishController",
+            "summary": "",
+            "url": "classes/App-Controller-SustainableFishController.html"
+        },                {
+            "fqsen": "\\App\\Controller\\SustainableFishController\u003A\u003Aindex\u0028\u0029",
+            "name": "index",
+            "summary": "Renders\u0020the\u0020sustainable\u0020fish\u0020index\u0020page.",
+            "url": "classes/App-Controller-SustainableFishController.html#method_index"
+        },                {
+            "fqsen": "\\App\\Controller\\SustainableFishController\u003A\u003AcreateSustainableFishData\u0028\u0029",
+            "name": "createSustainableFishData",
+            "summary": "Creates\u0020sustainable\u0020fish\u0020data.",
+            "url": "classes/App-Controller-SustainableFishController.html#method_createSustainableFishData"
+        },                {
+            "fqsen": "\\App\\Controller\\SustainableFishController\u003A\u003AgetSustainableFishData\u0028\u0029",
+            "name": "getSustainableFishData",
+            "summary": "Retrieves\u0020sustainable\u0020fish\u0020data\u0020as\u0020JSON.",
+            "url": "classes/App-Controller-SustainableFishController.html#method_getSustainableFishData"
+        },                {
+            "fqsen": "\\App\\Controller\\SustainableFishController\u003A\u003AshowSustainableFishData\u0028\u0029",
+            "name": "showSustainableFishData",
+            "summary": "Shows\u0020all\u0020sustainable\u0020fish\u0020data.",
+            "url": "classes/App-Controller-SustainableFishController.html#method_showSustainableFishData"
+        },                {
+            "fqsen": "\\App\\Controller\\SustainableFishController\u003A\u003AdeleteAllSustainable\u0028\u0029",
+            "name": "deleteAllSustainable",
+            "summary": "Deletes\u0020all\u0020sustainable\u0020fish\u0020data.",
+            "url": "classes/App-Controller-SustainableFishController.html#method_deleteAllSustainable"
         },                {
             "fqsen": "\\App\\Dice\\Dice",
             "name": "Dice",
@@ -706,6 +806,171 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/App-Entity-Library.html#property_image"
         },                {
+            "fqsen": "\\App\\Entity\\MarineCoverage",
+            "name": "MarineCoverage",
+            "summary": "",
+            "url": "classes/App-Entity-MarineCoverage.html"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineCoverage\u003A\u003AgetId\u0028\u0029",
+            "name": "getId",
+            "summary": "",
+            "url": "classes/App-Entity-MarineCoverage.html#method_getId"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineCoverage\u003A\u003AgetRegion\u0028\u0029",
+            "name": "getRegion",
+            "summary": "",
+            "url": "classes/App-Entity-MarineCoverage.html#method_getRegion"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineCoverage\u003A\u003AsetRegion\u0028\u0029",
+            "name": "setRegion",
+            "summary": "",
+            "url": "classes/App-Entity-MarineCoverage.html#method_setRegion"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineCoverage\u003A\u003AgetYear\u0028\u0029",
+            "name": "getYear",
+            "summary": "",
+            "url": "classes/App-Entity-MarineCoverage.html#method_getYear"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineCoverage\u003A\u003AsetYear\u0028\u0029",
+            "name": "setYear",
+            "summary": "",
+            "url": "classes/App-Entity-MarineCoverage.html#method_setYear"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineCoverage\u003A\u003AgetPercentage\u0028\u0029",
+            "name": "getPercentage",
+            "summary": "",
+            "url": "classes/App-Entity-MarineCoverage.html#method_getPercentage"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineCoverage\u003A\u003AsetPercentage\u0028\u0029",
+            "name": "setPercentage",
+            "summary": "",
+            "url": "classes/App-Entity-MarineCoverage.html#method_setPercentage"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineCoverage\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "",
+            "url": "classes/App-Entity-MarineCoverage.html#property_id"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineCoverage\u003A\u003A\u0024region",
+            "name": "region",
+            "summary": "",
+            "url": "classes/App-Entity-MarineCoverage.html#property_region"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineCoverage\u003A\u003A\u0024year",
+            "name": "year",
+            "summary": "",
+            "url": "classes/App-Entity-MarineCoverage.html#property_year"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineCoverage\u003A\u003A\u0024percentage",
+            "name": "percentage",
+            "summary": "",
+            "url": "classes/App-Entity-MarineCoverage.html#property_percentage"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection",
+            "name": "MarineProtection",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003AgetId\u0028\u0029",
+            "name": "getId",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#method_getId"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003AgetRegion\u0028\u0029",
+            "name": "getRegion",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#method_getRegion"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003AsetRegion\u0028\u0029",
+            "name": "setRegion",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#method_setRegion"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003AgetYear2022\u0028\u0029",
+            "name": "getYear2022",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#method_getYear2022"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003AsetYear2022\u0028\u0029",
+            "name": "setYear2022",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#method_setYear2022"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003AgetYear2021\u0028\u0029",
+            "name": "getYear2021",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#method_getYear2021"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003AsetYear2021\u0028\u0029",
+            "name": "setYear2021",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#method_setYear2021"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003AgetYear2020\u0028\u0029",
+            "name": "getYear2020",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#method_getYear2020"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003AsetYear2020\u0028\u0029",
+            "name": "setYear2020",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#method_setYear2020"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003AgetYear2019\u0028\u0029",
+            "name": "getYear2019",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#method_getYear2019"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003AsetYear2019\u0028\u0029",
+            "name": "setYear2019",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#method_setYear2019"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003AgetYear2018\u0028\u0029",
+            "name": "getYear2018",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#method_getYear2018"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003AsetYear2018\u0028\u0029",
+            "name": "setYear2018",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#method_setYear2018"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#property_id"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003A\u0024region",
+            "name": "region",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#property_region"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003A\u0024year2022",
+            "name": "year2022",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#property_year2022"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003A\u0024year2021",
+            "name": "year2021",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#property_year2021"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003A\u0024year2020",
+            "name": "year2020",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#property_year2020"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003A\u0024year2019",
+            "name": "year2019",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#property_year2019"
+        },                {
+            "fqsen": "\\App\\Entity\\MarineProtection\u003A\u003A\u0024year2018",
+            "name": "year2018",
+            "summary": "",
+            "url": "classes/App-Entity-MarineProtection.html#property_year2018"
+        },                {
             "fqsen": "\\App\\Entity\\Product",
             "name": "Product",
             "summary": "",
@@ -751,6 +1016,81 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/App-Entity-Product.html#property_value"
         },                {
+            "fqsen": "\\App\\Entity\\SustainableFish",
+            "name": "SustainableFish",
+            "summary": "",
+            "url": "classes/App-Entity-SustainableFish.html"
+        },                {
+            "fqsen": "\\App\\Entity\\SustainableFish\u003A\u003AgetId\u0028\u0029",
+            "name": "getId",
+            "summary": "",
+            "url": "classes/App-Entity-SustainableFish.html#method_getId"
+        },                {
+            "fqsen": "\\App\\Entity\\SustainableFish\u003A\u003AgetYear\u0028\u0029",
+            "name": "getYear",
+            "summary": "",
+            "url": "classes/App-Entity-SustainableFish.html#method_getYear"
+        },                {
+            "fqsen": "\\App\\Entity\\SustainableFish\u003A\u003AsetYear\u0028\u0029",
+            "name": "setYear",
+            "summary": "",
+            "url": "classes/App-Entity-SustainableFish.html#method_setYear"
+        },                {
+            "fqsen": "\\App\\Entity\\SustainableFish\u003A\u003AgetSustainablePercentage\u0028\u0029",
+            "name": "getSustainablePercentage",
+            "summary": "",
+            "url": "classes/App-Entity-SustainableFish.html#method_getSustainablePercentage"
+        },                {
+            "fqsen": "\\App\\Entity\\SustainableFish\u003A\u003AsetSustainablePercentage\u0028\u0029",
+            "name": "setSustainablePercentage",
+            "summary": "",
+            "url": "classes/App-Entity-SustainableFish.html#method_setSustainablePercentage"
+        },                {
+            "fqsen": "\\App\\Entity\\SustainableFish\u003A\u003AgetSustainableAmount\u0028\u0029",
+            "name": "getSustainableAmount",
+            "summary": "",
+            "url": "classes/App-Entity-SustainableFish.html#method_getSustainableAmount"
+        },                {
+            "fqsen": "\\App\\Entity\\SustainableFish\u003A\u003AsetSustainableAmount\u0028\u0029",
+            "name": "setSustainableAmount",
+            "summary": "",
+            "url": "classes/App-Entity-SustainableFish.html#method_setSustainableAmount"
+        },                {
+            "fqsen": "\\App\\Entity\\SustainableFish\u003A\u003AgetAssessedAmount\u0028\u0029",
+            "name": "getAssessedAmount",
+            "summary": "",
+            "url": "classes/App-Entity-SustainableFish.html#method_getAssessedAmount"
+        },                {
+            "fqsen": "\\App\\Entity\\SustainableFish\u003A\u003AsetAssessedAmount\u0028\u0029",
+            "name": "setAssessedAmount",
+            "summary": "",
+            "url": "classes/App-Entity-SustainableFish.html#method_setAssessedAmount"
+        },                {
+            "fqsen": "\\App\\Entity\\SustainableFish\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "",
+            "url": "classes/App-Entity-SustainableFish.html#property_id"
+        },                {
+            "fqsen": "\\App\\Entity\\SustainableFish\u003A\u003A\u0024year",
+            "name": "year",
+            "summary": "",
+            "url": "classes/App-Entity-SustainableFish.html#property_year"
+        },                {
+            "fqsen": "\\App\\Entity\\SustainableFish\u003A\u003A\u0024sustainable_percentage",
+            "name": "sustainable_percentage",
+            "summary": "",
+            "url": "classes/App-Entity-SustainableFish.html#property_sustainable_percentage"
+        },                {
+            "fqsen": "\\App\\Entity\\SustainableFish\u003A\u003A\u0024sustainable_amount",
+            "name": "sustainable_amount",
+            "summary": "",
+            "url": "classes/App-Entity-SustainableFish.html#property_sustainable_amount"
+        },                {
+            "fqsen": "\\App\\Entity\\SustainableFish\u003A\u003A\u0024assessed_amount",
+            "name": "assessed_amount",
+            "summary": "",
+            "url": "classes/App-Entity-SustainableFish.html#property_assessed_amount"
+        },                {
             "fqsen": "\\App\\Kernel",
             "name": "Kernel",
             "summary": "",
@@ -766,6 +1106,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/App-Repository-LibraryRepository.html#method___construct"
         },                {
+            "fqsen": "\\App\\Repository\\MarineCoverageRepository",
+            "name": "MarineCoverageRepository",
+            "summary": "",
+            "url": "classes/App-Repository-MarineCoverageRepository.html"
+        },                {
+            "fqsen": "\\App\\Repository\\MarineCoverageRepository\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/App-Repository-MarineCoverageRepository.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Repository\\MarineProtectionRepository",
+            "name": "MarineProtectionRepository",
+            "summary": "",
+            "url": "classes/App-Repository-MarineProtectionRepository.html"
+        },                {
+            "fqsen": "\\App\\Repository\\MarineProtectionRepository\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/App-Repository-MarineProtectionRepository.html#method___construct"
+        },                {
             "fqsen": "\\App\\Repository\\ProductRepository",
             "name": "ProductRepository",
             "summary": "",
@@ -775,6 +1135,16 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/App-Repository-ProductRepository.html#method___construct"
+        },                {
+            "fqsen": "\\App\\Repository\\SustainableFishRepository",
+            "name": "SustainableFishRepository",
+            "summary": "",
+            "url": "classes/App-Repository-SustainableFishRepository.html"
+        },                {
+            "fqsen": "\\App\\Repository\\SustainableFishRepository\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/App-Repository-SustainableFishRepository.html#method___construct"
         },                {
             "fqsen": "\\",
             "name": "\\",

@@ -13,6 +13,11 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class MarineCoverageController extends AbstractController
 {
+    /**
+     * Renders the shuffled deck view.
+     *
+     * @return Response The response containing the shuffled deck view.
+     */
     #[Route('/marine/coverage', name: 'app_marine_coverage')]
     public function index(): Response
     {
@@ -21,6 +26,12 @@ class MarineCoverageController extends AbstractController
         ]);
     }
 
+    /**
+     * Creates marine coverage data.
+     *
+     * @param ManagerRegistry $doctrine The Doctrine manager registry.
+     * @return Response The response indicating the success of the operation.
+     */
     #[Route('/coverage/create', name: 'coverage_create')]
     public function createMarineCoverageData(ManagerRegistry $doctrine): Response
     {
@@ -109,6 +120,12 @@ class MarineCoverageController extends AbstractController
         return new Response('Saved new marine coverage data.');
     }
 
+    /**
+     * Shows marine coverage data.
+     *
+     * @param MarineCoverageRepository $repository The repository for marine coverage.
+     * @return JsonResponse The JSON response containing marine coverage data.
+     */
     #[Route('/coverage/show', name: 'coverage_show', methods: ['GET'])]
     public function showMarineCoverageData(MarineCoverageRepository $repository): JsonResponse
     {
@@ -126,6 +143,12 @@ class MarineCoverageController extends AbstractController
         return new JsonResponse($jsonData);
     }
 
+    /**
+     * Deletes all marine coverage data.
+     *
+     * @param ManagerRegistry $doctrine The Doctrine manager registry.
+     * @return Response The response indicating the success of the operation.
+     */
     #[Route('/coverage/delete', name: 'coverage_delete_all')]
     public function deleteAllMarineCoverage(ManagerRegistry $doctrine): Response
     {
@@ -142,8 +165,12 @@ class MarineCoverageController extends AbstractController
         return new Response('All marine coverage data has been deleted.');
     }
 
-
-
+    /**
+     * Retrieves marine coverage data as JSON.
+     *
+     * @param MarineCoverageRepository $marineCoverageRepository The repository for marine coverage.
+     * @return JsonResponse The JSON response containing marine coverage data.
+     */
     #[Route('/coverage/data', name: 'coverage_data')]
     public function getMarineData(MarineCoverageRepository $marineCoverageRepository): JsonResponse
     {

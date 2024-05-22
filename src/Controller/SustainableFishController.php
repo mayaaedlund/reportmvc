@@ -13,6 +13,11 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class SustainableFishController extends AbstractController
 {
+    /**
+     * Renders the sustainable fish index page.
+     *
+     * @return Response The response containing the sustainable fish index page.
+     */
     #[Route('/sustainable', name: 'app_sustainable')]
     public function index(): Response
     {
@@ -21,6 +26,12 @@ class SustainableFishController extends AbstractController
         ]);
     }
 
+    /**
+     * Creates sustainable fish data.
+     *
+     * @param ManagerRegistry $doctrine The Doctrine manager registry.
+     * @return Response The response indicating the success of the operation.
+     */
     #[Route('/sustainable/create', name: 'sustainable_create')]
     public function createSustainableFishData(ManagerRegistry $doctrine): Response
     {
@@ -50,6 +61,12 @@ class SustainableFishController extends AbstractController
         return new Response('Saved new sustainable fish data.');
     }
 
+    /**
+     * Retrieves sustainable fish data as JSON.
+     *
+     * @param SustainableFishRepository $repository The repository for sustainable fish.
+     * @return JsonResponse The JSON response containing sustainable fish data.
+     */
     #[Route('/sustainable/data', name: 'sustainable_data')]
     public function getSustainableFishData(SustainableFishRepository $repository): JsonResponse
     {
@@ -58,6 +75,12 @@ class SustainableFishController extends AbstractController
         return $this->json($data);
     }
 
+    /**
+     * Shows all sustainable fish data.
+     *
+     * @param SustainableFishRepository $repository The repository for sustainable fish.
+     * @return JsonResponse The JSON response containing all sustainable fish data.
+     */
     #[Route('/sustainable/show', name: 'sustainable_show', methods: ['GET'])]
     public function showSustainableFishData(SustainableFishRepository $repository): JsonResponse
     {
@@ -76,6 +99,12 @@ class SustainableFishController extends AbstractController
         return new JsonResponse($jsonData);
     }
 
+    /**
+     * Deletes all sustainable fish data.
+     *
+     * @param ManagerRegistry $doctrine The Doctrine manager registry.
+     * @return Response The response indicating the success of the operation.
+     */
     #[Route('/sustainable/delete', name: 'sustainable_delete_all')]
     public function deleteAllSustainable(ManagerRegistry $doctrine): Response
     {
