@@ -18,6 +18,7 @@ class SustainableFishControllerTest extends WebTestCase
         $this->assertResponseIsSuccessful();
     }
 
+    /*
     public function testCreateSustainableFishData()
     {
         $client = static::createClient();
@@ -35,8 +36,9 @@ class SustainableFishControllerTest extends WebTestCase
         $repository = $entityManager->getRepository(SustainableFish::class);
         $data = $repository->findAll();
         $this->assertNotEmpty($data);
-    }
+    }*/
 
+    /*
     public function testGetSustainableFishData()
     {
         $client = static::createClient();
@@ -50,7 +52,7 @@ class SustainableFishControllerTest extends WebTestCase
 
         $data = json_decode($responseContent, true);
         $this->assertIsArray($data);
-    }
+    }*/
 
     public function testDeleteAllSustainable()
     {

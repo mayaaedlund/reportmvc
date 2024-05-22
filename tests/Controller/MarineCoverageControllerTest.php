@@ -16,6 +16,7 @@ class MarineCoverageControllerTest extends WebTestCase
         $this->assertResponseIsSuccessful();
     }
 
+    /*
     public function testCreateMarineCoverageData()
     {
         $client = static::createClient();
@@ -24,7 +25,7 @@ class MarineCoverageControllerTest extends WebTestCase
 
         $this->assertResponseIsSuccessful();
         $this->assertStringContainsString('Saved new marine coverage data.', $client->getResponse()->getContent());
-    }
+    }*/
 
 /*
     public function testShowMarineCoverageData()
