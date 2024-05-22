@@ -29,5 +29,17 @@ class ProjectController extends AbstractController
         return $this->render('proj/statistic.html.twig');
     }
 
+    #[Route("/proj/api", name: "projapi")]
+    public function projapi(): Response
+    {
+        return $this->render('proj/api.html.twig');
+    }
+
+    #[Route("/proj/about/database", name: "database")]
+    public function database(): Response
+    {
+        return $this->render('proj/database.html.twig');
+    }
+
 
 }

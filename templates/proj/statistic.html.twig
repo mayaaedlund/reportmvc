@@ -15,16 +15,128 @@
     <h2> Bedömning av hållbart nyttjande bestånd av fisk och skaldjur.</h2>
     <p> Antal i procent av bedömda bestånd. </p>
 
+    <div>
+        <canvas id="sustainableFishChart"></canvas>
+    </div>
+
     <p> Källa: Hållbart nyttjade fisk- och skaldjursbestånd i kust och hav, SVERIGES MILJÖMÅL, Havs- och vattenmyndigheten. </p>
 
 
 
     <h2> Coverage of protected areas in relation to marine areas (Exclusive Economic Zones)(%) </h1>
-    <p> Europa och Nordamerika = röd, Öst och Sydostasien = blå. </p>
+    <div>
+        <canvas id="marineCoverageChart"></canvas>
+    </div>
 
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('{{ path('coverage_data') }}')
+            .then(response => response.json())
+            .then(data => {
+                // Skapa en array med alla åren från 2000 till 2018
+                const allYears = Array.from({ length: 2019 - 2000 }, (_, index) => 2000 + index);
+                
+                const labels = allYears;
+                const regions = [...new Set(data.map(item => item.region))];
+                const datasets = regions.map(region => {
+                    return {
+                        label: region,
+                        data: allYears.map(year => {
+                            const foundItem = data.find(item => item.year === year && item.region === region);
+                            return foundItem ? foundItem.percentage : null;
+                        }),
+                        backgroundColor: getRandomColor(),
+                        borderColor: getRandomColor(),
+                        borderWidth: 1
+                    };
+                });
+
+                const ctx = document.getElementById('marineCoverageChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: datasets
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            },
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Year'
+                                },
+                                ticks: {
+                                    autoSkip: true,
+                                    maxTicksLimit: 20
+                                }
+                            }
+                        }
+                    }
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
+
+        // Funktion för att generera en slumpmässig färg
+        function getRandomColor() {
+            return `rgba(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, 0.2)`;
+        }
+    });
+
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('{{ path('sustainable_data') }}')
+            .then(response => response.json())
+            .then(data => {
+                const labels = data.map(item => item.year);
+                const sustainablePercentage = data.map(item => item.sustainablePercentage);
+                const sustainableAmount = data.map(item => item.sustainableAmount);
+                const assessedAmount = data.map(item => item.assessedAmount);
+
+                const ctx = document.getElementById('sustainableFishChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Sustainable Percentage',
+                            data: sustainablePercentage,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }, {
+                            label: 'Sustainable Amount',
+                            data: sustainableAmount,
+                            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderWidth: 1
+                        }, {
+                            label: 'Assessed Amount',
+                            data: assessedAmount,
+                            backgroundColor: 'rgba(255, 206, 86, 0.2)',
+                            borderColor: 'rgba(255, 206, 86, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            });
+    });
+
+
     document.addEventListener('DOMContentLoaded', function() {
         // Hämta data från servern
         fetch('{{ path('marine_data') }}')
@@ -74,5 +186,6 @@
             })
             .catch(error => console.error('Error fetching data:', error));
     });
+
 </script>
 {% endblock %}

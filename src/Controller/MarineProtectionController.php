@@ -74,7 +74,7 @@ class MarineProtectionController extends AbstractController
         return new Response('Saved new marine protection data.');
     }
 
-    #[Route('/marine/show', name: 'marine:show')]
+    #[Route('/marine/show', name: 'marine_show')]
     public function showAllMarine(
         MarineProtectionRepository $marineprotectionRepository
     ): Response {

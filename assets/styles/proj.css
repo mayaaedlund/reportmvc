@@ -84,18 +84,57 @@ nav ul li a:hover {
     color: rgb(64, 64, 64);  /* Färg på länkarna när de är överhoppade */
 }
 
+/* API  */
 
-/* Images */
+.apidiv {
+    text-align: center;
+}
+
+.apidiv a {
+    text-decoration: none; /* Tar bort understrykning från länkar */
+    color: rgb(73, 129, 249); /* Ändrar färgen på länkar till svart */
+    font-weight: bolder;
+}
+
+/* Statistic */
+
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.stats-table th,
+.stats-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.stats-table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+.stats-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.stats-table tr:hover {
+    background-color: #f2f2f2;
+}
+
+
 
 .image-container {
     display: flex;
-    justify-content: center; /* Centrera innehållet horisontellt */
+    justify-content: center; 
 }
 
 .image-size {
     align-self: self-start;
-    width: 500px; /* Ange den önskade bredden */
-    height: auto; /* Sätt höjden automatiskt för att bevara bildens proportioner */
+    width: 500px;
+    height: auto;
 }
 
 .image-gallery {
@@ -114,6 +153,7 @@ nav ul li a:hover {
 .image-gallery img:hover {
     transform: scale(1.1);
 }
+
 
 
 footer {
@@ -225,7 +265,7 @@ body {
     background-color: #eee;
     font-size: 2em;
 }
-*/
+
 main {
     padding: 0.5em;
 }
@@ -277,7 +317,7 @@ ul.dicearea li {
     content: "⚠";
 }
 
-/* Card */
+
 .card {
     font-size: 5em;
 }
@@ -316,7 +356,7 @@ ul.cardarea li {
     text-align: center;
 }
 
-/* Styla knapparna */
+
 form {
     text-align: center;
 }
@@ -331,19 +371,23 @@ input[type="submit"], button {
     cursor: pointer; 
     margin: 10px;
 }
+*/
 
+/*
 input[name="playerStay"], button[type="submit"] {
-    background-color: #f44336; /* Bakgrundsfärg för "STANNA" knappen */
+    background-color: #f44336;
 }
 input[type="submit"]:hover, button:hover {
     background-color: #45a049;
 }
 
+*/
+
 h2 {
     text-align: center;
 }
 
-/* Styla kortcontainer */
+/* Styla kortcontainer 
 .card-container {
     text-align: center;
     margin-bottom: 20px;
@@ -352,6 +396,7 @@ h2 {
 button[type="submit"] {
     background-color: black;
 }
+*/
 
 .image-size-big {
     width: 400px;
