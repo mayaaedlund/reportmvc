@@ -99,7 +99,7 @@ class MarineCoverageController extends AbstractController
                 $coverage = new MarineCoverage();
                 $coverage->setRegion($region);
                 $coverage->setYear($item['year']);
-                $coverage->setPercentage(floatval($item['percentage']));
+                $coverage->setPercentage($item['percentage']);
                 $entityManager->persist($coverage);
             }
         }

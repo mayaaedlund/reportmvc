@@ -4,69 +4,68 @@ namespace App\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class LibraryControllerTest extends WebTestCase
+class CardControllerTest extends WebTestCase
 {
-    public function testIndex()
+    public function testHome()
     {
         $client = static::createClient();
 
-        $client->request('GET', '/library');
+        $client->request('GET', '/card');
 
         $this->assertResponseIsSuccessful();
     }
 
-    public function testViewAllLibrary()
+    public function testApi()
     {
         $client = static::createClient();
 
-        $client->request('GET', '/library/view');
+        $client->request('GET', '/api');
 
         $this->assertResponseIsSuccessful();
     }
 
-    public function testShowBookById()
+    public function testSession()
     {
         $client = static::createClient();
-        $client->request('GET', '/library/show/4');
+
+        $client->request('GET', '/session');
 
         $this->assertResponseIsSuccessful();
     }
 
-    public function testLibraryDelete()
+    public function testResetSession()
     {
         $client = static::createClient();
 
-        $client->request('GET', '/library/delete');
+        $client->request('POST', '/reset-session');
+
+        $this->assertResponseRedirects('/session');
+    }
+
+    public function testDrawCard()
+    {
+        $client = static::createClient();
+
+        $client->request('GET', '/card/draw/test');
 
         $this->assertResponseIsSuccessful();
     }
 
-    public function testChangeBook()
+    public function testDeckCard()
     {
         $client = static::createClient();
 
-        $client->request('GET', '/library/change/4');
+        $client->request('GET', '/card/deck');
 
         $this->assertResponseIsSuccessful();
     }
 
-    public function testLibraryAdd()
+    public function testShuffleCard()
     {
         $client = static::createClient();
 
-        $client->request('GET', '/library/create');
+        $client->request('GET', '/card/deck/shuffle');
 
         $this->assertResponseIsSuccessful();
-    }
-
-
-    public function testApiLibraryBooks()
-    {
-        $client = static::createClient();
-
-        $client->request('GET', '/api/library/books');
-
-        $this->assertResponseIsSuccessful();
-        $this->assertJson($client->getResponse()->getContent());
     }
 }

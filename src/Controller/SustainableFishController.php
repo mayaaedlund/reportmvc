@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Attribute\Route;
 
-class SustainableController extends AbstractController
+class SustainableFishController extends AbstractController
 {
     #[Route('/sustainable', name: 'app_sustainable')]
     public function index(): Response
