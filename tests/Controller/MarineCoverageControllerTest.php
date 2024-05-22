@@ -37,7 +37,7 @@ class MarineCoverageControllerTest extends WebTestCase
         $this->assertResponseIsSuccessful();
 
         $data = json_decode($client->getResponse()->getContent(), true);
-    }*/
+    }
 
     
     public function testDeleteAllMarineCoverage()
@@ -59,5 +59,5 @@ class MarineCoverageControllerTest extends WebTestCase
         $this->assertResponseIsSuccessful();
 
         $this->assertJson($client->getResponse()->getContent());
-    }*/
+    }
 }
