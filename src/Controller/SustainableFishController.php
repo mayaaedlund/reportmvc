@@ -109,7 +109,7 @@ class SustainableFishController extends AbstractController
     public function deleteAllSustainable(ManagerRegistry $doctrine): Response
     {
         $entityManager = $doctrine->getManager();
-        
+
         $sustainableFish = $entityManager->getRepository(SustainableFish::class)->findAll();
 
         foreach ($sustainableFish as $entity) {

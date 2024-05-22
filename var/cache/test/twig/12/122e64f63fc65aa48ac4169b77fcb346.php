@@ -320,9 +320,8 @@ class __TwigTemplate_993588791dd226e7941bc8c517ccf459 extends Template
                     return table;
                 }
 
-                // Hämta div-elementet där tabellen ska visas
                 const tableContainer = document.getElementById('table-container');
-                // Skapa tabellen och lägg till den i div-elementet
+
                 const table = createTable(data);
                 tableContainer.appendChild(table);
             })
@@ -595,9 +594,8 @@ class __TwigTemplate_993588791dd226e7941bc8c517ccf459 extends Template
                     return table;
                 }
 
-                // Hämta div-elementet där tabellen ska visas
                 const tableContainer = document.getElementById('table-container');
-                // Skapa tabellen och lägg till den i div-elementet
+
                 const table = createTable(data);
                 tableContainer.appendChild(table);
             })

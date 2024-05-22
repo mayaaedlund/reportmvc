@@ -153,7 +153,7 @@ class MarineCoverageController extends AbstractController
     public function deleteAllMarineCoverage(ManagerRegistry $doctrine): Response
     {
         $entityManager = $doctrine->getManager();
-        
+
         $marineCoverage = $entityManager->getRepository(MarineCoverage::class)->findAll();
 
         foreach ($marineCoverage as $entity) {

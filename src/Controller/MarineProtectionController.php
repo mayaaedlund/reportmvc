@@ -111,7 +111,7 @@ class MarineProtectionController extends AbstractController
     public function deleteAllMarine(ManagerRegistry $doctrine): Response
     {
         $entityManager = $doctrine->getManager();
-        
+
         // Hämta alla MarineProtection-objekt
         $marine = $entityManager->getRepository(MarineProtection::class)->findAll();
 
