@@ -193,7 +193,24 @@ class __TwigTemplate_a1367352d4cf9ad001067f0173159699 extends Template
 
 
     <h2 id=\"kmom10\">Kmom10</h2>
-    <p>Här kommer redovisningstext för kmom10.</p>
+    <h3> Del 1, implementation av krav 1,2,3 </h3>
+    <p>Jag skapade ProjectController som ansvarar för samtliga sidor för mitt projekt. Denna controller hanterar navigationen och innehållet på projektets specifika sidor.</p>
+    <p>För att ge projektet en unik design som skiljer sig från tidigare kursmoment skapade jag en helt ny stylesheet, “proj.css”, och en grundmall, “projbase.html.twig”. Denna grundmall inkluderar en specifik navbar specifikt för projektet som enbart innehåller relevanta länkar för projektet (förutom report - som tar dig tillbaka till reportsidan). </p>
+    <p>Jag valde en simpel design med ljusblå toner för att representera projektets fokus på hav och marina frågor. Detta innebar att jag modifierade färger, typsnitt men också utseendet på headern och footern för att skapa en kontrast från tidigare design. </p>
+    <p>Landningssidan ligger under “/proj” och kan nås via navbaren på rapport-sidan. Denna sida är projektets förstasida och ger en introduktion till projektets fokus och ämne. En mer detaljerad introduktion med syfte till projektet ligger i en separat sida “/proj/about”, som nås via navbaren.</p>
+    <p>Jag har inkluderat information om rapportens kodkvalitet i “README.md”-filen. Här finns även instruktioner om hur man klonar och kör webbplatsen. Här visar jag även mina badges för kodkvalitet från Scrutinizer.</p>
+    <p>Kodtäckningen för mina nya klasser och databaser är i snitt 100%. Totalt för hela webbplatsen, inklusive äldre kursmoment, är 71%. Det som är i snitt 100% är allting som är relevant för projektet, vilket inkluderar alla kontrollerklasser som MarineCoverageController, MarineProtectionController, ProjectController, och SustainableFishController, samt alla entiteter och repositories skapade under projektets gång.</p>
+    <p>Genom att följa dessa steg har jag skapat en webbsida för projektet med en unik style som gör det lätt för användaren att navigera och förstå projektets mål och syfte. Den höga kodkvaliten och dokumentationen gör att jag säkerställer att mitt projekt innehåller snygg kod som är lätt att vidareutveckla.</p>
+    <p>För att implementera JSON API i mitt projekt la jag till en route för varje databas. I varje controller har jag en route som hämtar all data från databasen och sedan formatterar om den till en JSON-struktur som innehåller all information. JSON-datan returneras som ett svar på GET-förfrågan. I varje route har jag också en route som skapar och en som raderar data via POST. Efter att ha gjort sin POST-förfrågan (radera eller skapa) returnerar metoden ett meddelande på att allting har genomförts framgångsrikt. Metoderna använder JSONResponse för att säkerhetsställa att svaren returneras i rätt format. Genom att utnyttja Doctrine ORM kan applikationen enkelt hämta och skicka till databasen, vilket gör det effektivt att använda CRUD-operationer. </p>
+    <h3> Del 2 </h3>
+    <p>Att genomföra detta projekt gick smidigt med tanke på den kunskap jag fått med mig i tidigare kursmoment. </p>
+    <p>En av de största utmaningarna var att visa upp data från databasen på ett visuellt tilltalande sätt. Efter att ha gjort en del research beslutade jag mig för att använda Chart.js för att skapa diagrammen. Denna del av projektet tog mest tid, tillsammans med att skapa testklasser för controllerna. Eftersom vi inte har gått igenom detta i tidigare kursmoment, fick jag lägga ner mycket tid på att läsa på och komma fram till hur jag skulle implementera detta.</p>
+    <p>Att sätta upp grundstrukturen för projektet var en av de lättare delarna, tillsammans med att skapa README.md filen. </p>
+    <p> Jag tyckte projektet var lagom utmanande och rimligt för den tidsramen vi fått.</p>
+    <h3> Del 3 </h3>
+    <p> Kursen har i helhet varit mycket lärorik och intressant. Jag har fått en djup förståelse för Symfony och tycker att övningarna och genomgångarna har varit hjälpsamma för att klara kursmomenten. Det jag saknade var mer läsanvisningar eller genomgångar för skapande av tester för controllers. Sammanfattningsvis är jag nöjd med kursen och skulle definitivt rekommendera den till vänner. Den får 9/10 i betyg.</p>
+
+
 </div>
 
 ";
@@ -343,7 +360,24 @@ class __TwigTemplate_a1367352d4cf9ad001067f0173159699 extends Template
 
 
     <h2 id=\"kmom10\">Kmom10</h2>
-    <p>Här kommer redovisningstext för kmom10.</p>
+    <h3> Del 1, implementation av krav 1,2,3 </h3>
+    <p>Jag skapade ProjectController som ansvarar för samtliga sidor för mitt projekt. Denna controller hanterar navigationen och innehållet på projektets specifika sidor.</p>
+    <p>För att ge projektet en unik design som skiljer sig från tidigare kursmoment skapade jag en helt ny stylesheet, “proj.css”, och en grundmall, “projbase.html.twig”. Denna grundmall inkluderar en specifik navbar specifikt för projektet som enbart innehåller relevanta länkar för projektet (förutom report - som tar dig tillbaka till reportsidan). </p>
+    <p>Jag valde en simpel design med ljusblå toner för att representera projektets fokus på hav och marina frågor. Detta innebar att jag modifierade färger, typsnitt men också utseendet på headern och footern för att skapa en kontrast från tidigare design. </p>
+    <p>Landningssidan ligger under “/proj” och kan nås via navbaren på rapport-sidan. Denna sida är projektets förstasida och ger en introduktion till projektets fokus och ämne. En mer detaljerad introduktion med syfte till projektet ligger i en separat sida “/proj/about”, som nås via navbaren.</p>
+    <p>Jag har inkluderat information om rapportens kodkvalitet i “README.md”-filen. Här finns även instruktioner om hur man klonar och kör webbplatsen. Här visar jag även mina badges för kodkvalitet från Scrutinizer.</p>
+    <p>Kodtäckningen för mina nya klasser och databaser är i snitt 100%. Totalt för hela webbplatsen, inklusive äldre kursmoment, är 71%. Det som är i snitt 100% är allting som är relevant för projektet, vilket inkluderar alla kontrollerklasser som MarineCoverageController, MarineProtectionController, ProjectController, och SustainableFishController, samt alla entiteter och repositories skapade under projektets gång.</p>
+    <p>Genom att följa dessa steg har jag skapat en webbsida för projektet med en unik style som gör det lätt för användaren att navigera och förstå projektets mål och syfte. Den höga kodkvaliten och dokumentationen gör att jag säkerställer att mitt projekt innehåller snygg kod som är lätt att vidareutveckla.</p>
+    <p>För att implementera JSON API i mitt projekt la jag till en route för varje databas. I varje controller har jag en route som hämtar all data från databasen och sedan formatterar om den till en JSON-struktur som innehåller all information. JSON-datan returneras som ett svar på GET-förfrågan. I varje route har jag också en route som skapar och en som raderar data via POST. Efter att ha gjort sin POST-förfrågan (radera eller skapa) returnerar metoden ett meddelande på att allting har genomförts framgångsrikt. Metoderna använder JSONResponse för att säkerhetsställa att svaren returneras i rätt format. Genom att utnyttja Doctrine ORM kan applikationen enkelt hämta och skicka till databasen, vilket gör det effektivt att använda CRUD-operationer. </p>
+    <h3> Del 2 </h3>
+    <p>Att genomföra detta projekt gick smidigt med tanke på den kunskap jag fått med mig i tidigare kursmoment. </p>
+    <p>En av de största utmaningarna var att visa upp data från databasen på ett visuellt tilltalande sätt. Efter att ha gjort en del research beslutade jag mig för att använda Chart.js för att skapa diagrammen. Denna del av projektet tog mest tid, tillsammans med att skapa testklasser för controllerna. Eftersom vi inte har gått igenom detta i tidigare kursmoment, fick jag lägga ner mycket tid på att läsa på och komma fram till hur jag skulle implementera detta.</p>
+    <p>Att sätta upp grundstrukturen för projektet var en av de lättare delarna, tillsammans med att skapa README.md filen. </p>
+    <p> Jag tyckte projektet var lagom utmanande och rimligt för den tidsramen vi fått.</p>
+    <h3> Del 3 </h3>
+    <p> Kursen har i helhet varit mycket lärorik och intressant. Jag har fått en djup förståelse för Symfony och tycker att övningarna och genomgångarna har varit hjälpsamma för att klara kursmomenten. Det jag saknade var mer läsanvisningar eller genomgångar för skapande av tester för controllers. Sammanfattningsvis är jag nöjd med kursen och skulle definitivt rekommendera den till vänner. Den får 9/10 i betyg.</p>
+
+
 </div>
 
 {% endblock %}

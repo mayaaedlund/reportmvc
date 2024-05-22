@@ -119,9 +119,12 @@ class __TwigTemplate_b89816c3f82d362b32f3e49c3cb4b34b extends Template
     </div>
 
     <h2> 3 tips till dig som vill göra skillnad: </h2>
-    <p> HANDLA HÅLLBART - gör medvetna val i butiken. Köp fisk och skaldjur som är producerad och fångad på ett hållbart sätt. </p>
-    <p>HANDLA ANSVARSFULLT - Köp inte smycken tillverkade av korall, sköldpaddsskal eller annat marint liv. </p>
-    <p> MINSKA PLASTANVÄNDNINGEN - Minska din plastanvändning genom att köpa återanvändbara produkter såsom påsar och sugrör. </p>
+    <p class=\"tips\"> HANDLA HÅLLBART </p>
+    <p> gör medvetna val i butiken. Köp fisk och skaldjur som är producerad och fångad på ett hållbart sätt. </p>
+    <p class=\"tips\">HANDLA ANSVARSFULLT </p>
+    <p> Köp inte smycken tillverkade av korall, sköldpaddsskal eller annat marint liv. </p>
+    <p class=\"tips\"> MINSKA PLASTANVÄNDNINGEN </p>
+    <p> Minska din plastanvändning genom att köpa återanvändbara produkter såsom påsar och sugrör. </p>
 
 </div>
 
@@ -131,7 +134,7 @@ class __TwigTemplate_b89816c3f82d362b32f3e49c3cb4b34b extends Template
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         fetch('";
-        // line 46
+        // line 49
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("coverage_data");
         yield "')
             .then(response => response.json())
@@ -221,7 +224,7 @@ class __TwigTemplate_b89816c3f82d362b32f3e49c3cb4b34b extends Template
      */
     public function getDebugInfo()
     {
-        return array (  135 => 46,  97 => 11,  90 => 6,  80 => 5,  60 => 3,  37 => 1,);
+        return array (  138 => 49,  97 => 11,  90 => 6,  80 => 5,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -260,9 +263,12 @@ class __TwigTemplate_b89816c3f82d362b32f3e49c3cb4b34b extends Template
     </div>
 
     <h2> 3 tips till dig som vill göra skillnad: </h2>
-    <p> HANDLA HÅLLBART - gör medvetna val i butiken. Köp fisk och skaldjur som är producerad och fångad på ett hållbart sätt. </p>
-    <p>HANDLA ANSVARSFULLT - Köp inte smycken tillverkade av korall, sköldpaddsskal eller annat marint liv. </p>
-    <p> MINSKA PLASTANVÄNDNINGEN - Minska din plastanvändning genom att köpa återanvändbara produkter såsom påsar och sugrör. </p>
+    <p class=\"tips\"> HANDLA HÅLLBART </p>
+    <p> gör medvetna val i butiken. Köp fisk och skaldjur som är producerad och fångad på ett hållbart sätt. </p>
+    <p class=\"tips\">HANDLA ANSVARSFULLT </p>
+    <p> Köp inte smycken tillverkade av korall, sköldpaddsskal eller annat marint liv. </p>
+    <p class=\"tips\"> MINSKA PLASTANVÄNDNINGEN </p>
+    <p> Minska din plastanvändning genom att köpa återanvändbara produkter såsom påsar och sugrör. </p>
 
 </div>
 

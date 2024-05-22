@@ -95,7 +95,9 @@ class __TwigTemplate_c97c3711e05932542aa6ab3e6aa97757 extends Template
         yield "\" alt=\"\" class=\"image-wide\">
     <p> Mitt projekt handlar om att visualisera indikatorer för hållbarhet och i mitt fall
     det globala målet nummer 14 - Hav och Marina resurser. </p>
-    <p> Syftet med projektet är att samla in data för området och visa upp det i denna hemsida.</p>
+    <p> Syftet med projektet är att samla in data för området i databaser och visuellt visa upp det i
+    denna hemsida. Jag analyserar och diskuterar resultaten jag får fram. </p>
+    <p> Projektet innehåller databaser och API-sidor där du se datan, radera den och skapa den på nytt. </p>
 </div>
 ";
         
@@ -143,7 +145,9 @@ class __TwigTemplate_c97c3711e05932542aa6ab3e6aa97757 extends Template
     <img src=\"{{ asset('img/ocean.jpg') }}\" alt=\"\" class=\"image-wide\">
     <p> Mitt projekt handlar om att visualisera indikatorer för hållbarhet och i mitt fall
     det globala målet nummer 14 - Hav och Marina resurser. </p>
-    <p> Syftet med projektet är att samla in data för området och visa upp det i denna hemsida.</p>
+    <p> Syftet med projektet är att samla in data för området i databaser och visuellt visa upp det i
+    denna hemsida. Jag analyserar och diskuterar resultaten jag får fram. </p>
+    <p> Projektet innehåller databaser och API-sidor där du se datan, radera den och skapa den på nytt. </p>
 </div>
 {% endblock %}", "proj/about.html.twig", "/home/maya/dbwebb-kurser/mvc/me/report/templates/proj/about.html.twig");
     }

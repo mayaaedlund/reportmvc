@@ -95,9 +95,18 @@ nav ul li a:hover {
     font-weight: bolder;
 }
 
+/* Text */
 .quote {
     font-style: italic;
-    color: #283c4d;
+    color: #3a6081;
+    font-weight: bold;
+}
+
+.tips {
+    font-style: oblique;
+    color: #3a6081;
+    font-weight: bolder;
+    font-size: 30px;
 }
 /* Statistic */
 
