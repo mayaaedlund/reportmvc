@@ -1,0 +1,611 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\CoreExtension;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+
+/* proj/statistic.html.twig */
+class __TwigTemplate_520b0d2a0a498574c815196b7593e692 extends Template
+{
+    private $source;
+    private $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->blocks = [
+            'title' => [$this, 'block_title'],
+            'body' => [$this, 'block_body'],
+        ];
+    }
+
+    protected function doGetParent(array $context)
+    {
+        // line 1
+        return "projbase.html.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "proj/statistic.html.twig"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "proj/statistic.html.twig"));
+
+        $this->parent = $this->loadTemplate("projbase.html.twig", "proj/statistic.html.twig", 1);
+        yield from $this->parent->unwrap()->yield($context, array_merge($this->blocks, $blocks));
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+    }
+
+    // line 3
+    public function block_title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        yield "Home";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        return; yield '';
+    }
+
+    // line 5
+    public function block_body($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+
+        // line 6
+        yield "<div class=\"content\">
+    <h1>Statistik</h1>
+
+    <p> Mål 14 består av flera delmål och nedan visas data för 2 av dem, 14.1 och 14.5. </p>
+    <p> Enligt SCB's undersökningar är 52% av det svenska fisk- och skaldjursbeståndet hållbart nyttjade och
+    14% av svenska marina områden skyddade. </p>
+    <p> Om vi kollar skillnaden 2015, när målen skapades, jämfört med 2018, sista året för datan, kan vi se att
+    världen har ökat sin andel av marina områden som är skyddade. Från 11% till 17%. Sedan år 2000 kan vi se en ökning på
+    15%. Min slutsats är att det går absolut framåt vilket är positivt men att det krävs mer arbete för att öka dessa siffror. </p>
+
+
+    <h2> Marint Skydd efter havsområde</h2>
+    <p> Andel i procent av total havsyta. </p>
+    <div id=\"table-container\"></div> <!-- Här kommer tabellen att visas -->
+    <p> Senast uppdaterad: 2023-12-11 </p>
+    <p> Källa: Skyddad Natur, SCB och Skydd av marina miljöer efter region. </p>
+    <p> Delmål 14.5 - Bevara kust- och havsområden. </p>
+    <p> Ett av målen är att senast 2020 skydda minst 10% av kust- och havsområden.
+    År 2022 var 14% av svenska marina områden skyddade. </p>
+    <p class=\"quote\"> \"Att skydda viktiga marina områden är avgörande för att bevara och 
+    skydda biologisk mångfald och att säkerställa ett långsiktigt och 
+    hållbart utnyttjande av de marina naturresurserna. Inrättandet av 
+    skyddade områden är en viktig mekanism för att uppnå detta mål, och 
+    denna indikator fungerar som ett sätt att mäta utvecklingen mot 
+    bevarande, återställande och en hållbar användning av marina 
+    ekosystem och deras tjänster, i linje med Sveriges skyldigheter enligt 
+    internationella avtal.\" </p>
+    <p class=\"quote\"> Förutom att skydda den biologiska mångfalden har skyddade marina 
+    områden högt socialt och ekonomiskt värde till exempel genom att 
+    stödja den lokala fiskeförsörjningen, stödja rekreations- och turistindustri, tillhandahålla områden för vetenskap, forskning och 
+    utbildning samt utgöra en grund för kulturella och andra icke materiella värden.
+    </p>
+    <p>Andelen marint skydd verkar vara relativt konstant de senaste 5 åren.
+    Det finns en regional variation av skyddsnivån. Västerviken har högre andel skyddade områden jämfört med både Östersjön och
+    Bottniska viken. Anledningarna till dessa skillnader skulle exempelvis kunna vara politiska beslut. Med tanke på dess stabilitet
+    de senaste åren kan man antyda att skyddsåtgärderna har bibehållits eller att förändringarna varit små. </p>
+
+
+
+    <h2> Bedömning av hållbart nyttjande bestånd av fisk och skaldjur.</h2>
+    <p> Antal i procent av bedömda bestånd. </p>
+
+    <div>
+        <canvas id=\"sustainableFishChart\"></canvas>
+    </div>
+
+    <p> Källa: Hållbart nyttjade fisk- och skaldjursbestånd i kust och hav, SVERIGES MILJÖMÅL, Havs- och vattenmyndigheten. </p>
+    <p> Delmål 14.1 - Främja hållbart fiske </p>
+    <p> Delmålet 14.1 är att senast 2020 införa en effektiv fångstreglering och stoppa överfiske, olagligt, orapporterad och oreglerat
+    fiske. Detta i syfte att återställa fiskbestånden så snabbt som möjligt. Målet är till nivåer som kan producera 
+    maximalt hållbart uttag, fastställt utifrån deras biologiska egenskaper. År 2021 var 52% av fisk- och skaldjursbeståndet i svenska
+    vatten hållbart nyttjade. </p>
+
+    <p class=\"quote\">Detta är en global indikator. Indikatorn ska mäta hur hållbart världens 
+    fiske är. Ett fiskbestånd som fiskas på eller över MSY (maximalt hållbart 
+    uttag, maximum sustainable yield, Ices 2016) klassificeras som 
+    biologiskt hållbart.</p>
+
+    <p> Vi kan se att andelen hållbara bestånd har ökat senaste åren. 2019 var det 40% och 2021 hade det ökat till 52%.
+    Trots ökningen av hållbara bestånd visas det inte någon märkvärd ökning i bedömda bestånd. Förändringarna i bedömningen skulle
+    därför kunna vara ett resultat av förbättrade åtgärder och inte en ökning av totala bestånd. Även om det finns en positiv kurva i
+    hållbarheten är det fortfarande en stor andel av de bedömda bestånden som inte ses som hållbara. </p>
+
+    <h2> Coverage of protected areas in relation to marine areas (Exclusive Economic Zones)(%) </h1>
+    <div>
+        <canvas id=\"marineCoverageChart\"></canvas>
+    </div>
+    <p> Detta är statistik över indikatorer som används för att mäta hur målet uppnås. </p>
+    <p> Vi kan se en trend av ökad täckning av skyddade områden de senaste åren. Det är betydligt större
+    framsteg i Europa och Nordamerika jämfört med Öst- och Sydostasien under perioden. 
+
+    I Europa och Nordamerika har ökningen varit stadig senaste åren vilket tyder på att de insatser som använts verkar
+    vara lyckade. Öst- och Sydostasien har också haft en positiv ökning, men betydligt långsammare och lägre. Detta kan såklart bero på
+    flera orsaker, exempelvis politiska, ekonomiska eller miljömässiga faktorer. </p>
+</div>
+
+<script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('";
+        // line 85
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("coverage_data");
+        yield "')
+            .then(response => response.json())
+            .then(data => {
+                // Skapa en array med alla åren från 2000 till 2018
+                const allYears = Array.from({ length: 2019 - 2000 }, (_, index) => 2000 + index);
+                
+                const labels = allYears;
+                const regions = [...new Set(data.map(item => item.region))];
+                const datasets = regions.map(region => {
+                    return {
+                        label: region,
+                        data: allYears.map(year => {
+                            const foundItem = data.find(item => item.year === year && item.region === region);
+                            return foundItem ? foundItem.percentage : null;
+                        }),
+                        backgroundColor: getRandomColor(),
+                        borderColor: getRandomColor(),
+                        borderWidth: 1
+                    };
+                });
+
+                const ctx = document.getElementById('marineCoverageChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: datasets
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            },
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Year'
+                                },
+                                ticks: {
+                                    autoSkip: true,
+                                    maxTicksLimit: 20
+                                }
+                            }
+                        }
+                    }
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
+
+        // Funktion för att generera en slumpmässig färg
+        function getRandomColor() {
+            return `rgba(\${Math.floor(Math.random() * 256)}, \${Math.floor(Math.random() * 256)}, \${Math.floor(Math.random() * 256)}, 0.2)`;
+        }
+    });
+
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('";
+        // line 144
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("sustainable_data");
+        yield "')
+            .then(response => response.json())
+            .then(data => {
+                const labels = data.map(item => item.year);
+                const sustainablePercentage = data.map(item => item.sustainablePercentage);
+                const sustainableAmount = data.map(item => item.sustainableAmount);
+                const assessedAmount = data.map(item => item.assessedAmount);
+
+                const ctx = document.getElementById('sustainableFishChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Sustainable Percentage',
+                            data: sustainablePercentage,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }, {
+                            label: 'Sustainable Amount',
+                            data: sustainableAmount,
+                            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderWidth: 1
+                        }, {
+                            label: 'Assessed Amount',
+                            data: assessedAmount,
+                            backgroundColor: 'rgba(255, 206, 86, 0.2)',
+                            borderColor: 'rgba(255, 206, 86, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            });
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Hämta data från servern
+        fetch('";
+        // line 191
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("marine_data");
+        yield "')
+            .then(response => response.json())
+            .then(data => {
+                // Funktion för att skapa en tabell
+                function createTable(data) {
+                    const table = document.createElement('table');
+                    table.classList.add('stats-table'); // Lägg till en klass för CSS-styling
+
+                    // Skapa header-rad
+                    const thead = table.createTHead();
+                    const headerRow = thead.insertRow();
+                    const headers = ['Region', '2022', '2021', '2020', '2019', '2018'];
+                    headers.forEach(headerText => {
+                        const th = document.createElement('th');
+                        th.appendChild(document.createTextNode(headerText));
+                        headerRow.appendChild(th);
+                    });
+
+                    // Skapa body-rad
+                    const tbody = table.createTBody();
+                    data.forEach(item => {
+                        const row = tbody.insertRow();
+                        const values = [
+                            item.region, 
+                            item.year2022, 
+                            item.year2021, 
+                            item.year2020, 
+                            item.year2019, 
+                            item.year2018
+                        ];
+                        values.forEach(text => {
+                            const cell = row.insertCell();
+                            cell.appendChild(document.createTextNode(text));
+                        });
+                    });
+
+                    return table;
+                }
+
+                // Hämta div-elementet där tabellen ska visas
+                const tableContainer = document.getElementById('table-container');
+                // Skapa tabellen och lägg till den i div-elementet
+                const table = createTable(data);
+                tableContainer.appendChild(table);
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    });
+
+</script>
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        return; yield '';
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getTemplateName()
+    {
+        return "proj/statistic.html.twig";
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getDebugInfo()
+    {
+        return array (  283 => 191,  233 => 144,  171 => 85,  90 => 6,  80 => 5,  60 => 3,  37 => 1,);
+    }
+
+    public function getSourceContext()
+    {
+        return new Source("{% extends \"projbase.html.twig\" %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<div class=\"content\">
+    <h1>Statistik</h1>
+
+    <p> Mål 14 består av flera delmål och nedan visas data för 2 av dem, 14.1 och 14.5. </p>
+    <p> Enligt SCB's undersökningar är 52% av det svenska fisk- och skaldjursbeståndet hållbart nyttjade och
+    14% av svenska marina områden skyddade. </p>
+    <p> Om vi kollar skillnaden 2015, när målen skapades, jämfört med 2018, sista året för datan, kan vi se att
+    världen har ökat sin andel av marina områden som är skyddade. Från 11% till 17%. Sedan år 2000 kan vi se en ökning på
+    15%. Min slutsats är att det går absolut framåt vilket är positivt men att det krävs mer arbete för att öka dessa siffror. </p>
+
+
+    <h2> Marint Skydd efter havsområde</h2>
+    <p> Andel i procent av total havsyta. </p>
+    <div id=\"table-container\"></div> <!-- Här kommer tabellen att visas -->
+    <p> Senast uppdaterad: 2023-12-11 </p>
+    <p> Källa: Skyddad Natur, SCB och Skydd av marina miljöer efter region. </p>
+    <p> Delmål 14.5 - Bevara kust- och havsområden. </p>
+    <p> Ett av målen är att senast 2020 skydda minst 10% av kust- och havsområden.
+    År 2022 var 14% av svenska marina områden skyddade. </p>
+    <p class=\"quote\"> \"Att skydda viktiga marina områden är avgörande för att bevara och 
+    skydda biologisk mångfald och att säkerställa ett långsiktigt och 
+    hållbart utnyttjande av de marina naturresurserna. Inrättandet av 
+    skyddade områden är en viktig mekanism för att uppnå detta mål, och 
+    denna indikator fungerar som ett sätt att mäta utvecklingen mot 
+    bevarande, återställande och en hållbar användning av marina 
+    ekosystem och deras tjänster, i linje med Sveriges skyldigheter enligt 
+    internationella avtal.\" </p>
+    <p class=\"quote\"> Förutom att skydda den biologiska mångfalden har skyddade marina 
+    områden högt socialt och ekonomiskt värde till exempel genom att 
+    stödja den lokala fiskeförsörjningen, stödja rekreations- och turistindustri, tillhandahålla områden för vetenskap, forskning och 
+    utbildning samt utgöra en grund för kulturella och andra icke materiella värden.
+    </p>
+    <p>Andelen marint skydd verkar vara relativt konstant de senaste 5 åren.
+    Det finns en regional variation av skyddsnivån. Västerviken har högre andel skyddade områden jämfört med både Östersjön och
+    Bottniska viken. Anledningarna till dessa skillnader skulle exempelvis kunna vara politiska beslut. Med tanke på dess stabilitet
+    de senaste åren kan man antyda att skyddsåtgärderna har bibehållits eller att förändringarna varit små. </p>
+
+
+
+    <h2> Bedömning av hållbart nyttjande bestånd av fisk och skaldjur.</h2>
+    <p> Antal i procent av bedömda bestånd. </p>
+
+    <div>
+        <canvas id=\"sustainableFishChart\"></canvas>
+    </div>
+
+    <p> Källa: Hållbart nyttjade fisk- och skaldjursbestånd i kust och hav, SVERIGES MILJÖMÅL, Havs- och vattenmyndigheten. </p>
+    <p> Delmål 14.1 - Främja hållbart fiske </p>
+    <p> Delmålet 14.1 är att senast 2020 införa en effektiv fångstreglering och stoppa överfiske, olagligt, orapporterad och oreglerat
+    fiske. Detta i syfte att återställa fiskbestånden så snabbt som möjligt. Målet är till nivåer som kan producera 
+    maximalt hållbart uttag, fastställt utifrån deras biologiska egenskaper. År 2021 var 52% av fisk- och skaldjursbeståndet i svenska
+    vatten hållbart nyttjade. </p>
+
+    <p class=\"quote\">Detta är en global indikator. Indikatorn ska mäta hur hållbart världens 
+    fiske är. Ett fiskbestånd som fiskas på eller över MSY (maximalt hållbart 
+    uttag, maximum sustainable yield, Ices 2016) klassificeras som 
+    biologiskt hållbart.</p>
+
+    <p> Vi kan se att andelen hållbara bestånd har ökat senaste åren. 2019 var det 40% och 2021 hade det ökat till 52%.
+    Trots ökningen av hållbara bestånd visas det inte någon märkvärd ökning i bedömda bestånd. Förändringarna i bedömningen skulle
+    därför kunna vara ett resultat av förbättrade åtgärder och inte en ökning av totala bestånd. Även om det finns en positiv kurva i
+    hållbarheten är det fortfarande en stor andel av de bedömda bestånden som inte ses som hållbara. </p>
+
+    <h2> Coverage of protected areas in relation to marine areas (Exclusive Economic Zones)(%) </h1>
+    <div>
+        <canvas id=\"marineCoverageChart\"></canvas>
+    </div>
+    <p> Detta är statistik över indikatorer som används för att mäta hur målet uppnås. </p>
+    <p> Vi kan se en trend av ökad täckning av skyddade områden de senaste åren. Det är betydligt större
+    framsteg i Europa och Nordamerika jämfört med Öst- och Sydostasien under perioden. 
+
+    I Europa och Nordamerika har ökningen varit stadig senaste åren vilket tyder på att de insatser som använts verkar
+    vara lyckade. Öst- och Sydostasien har också haft en positiv ökning, men betydligt långsammare och lägre. Detta kan såklart bero på
+    flera orsaker, exempelvis politiska, ekonomiska eller miljömässiga faktorer. </p>
+</div>
+
+<script src=\"https://cdn.jsdelivr.net/npm/chart.js\"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('{{ path('coverage_data') }}')
+            .then(response => response.json())
+            .then(data => {
+                // Skapa en array med alla åren från 2000 till 2018
+                const allYears = Array.from({ length: 2019 - 2000 }, (_, index) => 2000 + index);
+                
+                const labels = allYears;
+                const regions = [...new Set(data.map(item => item.region))];
+                const datasets = regions.map(region => {
+                    return {
+                        label: region,
+                        data: allYears.map(year => {
+                            const foundItem = data.find(item => item.year === year && item.region === region);
+                            return foundItem ? foundItem.percentage : null;
+                        }),
+                        backgroundColor: getRandomColor(),
+                        borderColor: getRandomColor(),
+                        borderWidth: 1
+                    };
+                });
+
+                const ctx = document.getElementById('marineCoverageChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: datasets
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            },
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Year'
+                                },
+                                ticks: {
+                                    autoSkip: true,
+                                    maxTicksLimit: 20
+                                }
+                            }
+                        }
+                    }
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
+
+        // Funktion för att generera en slumpmässig färg
+        function getRandomColor() {
+            return `rgba(\${Math.floor(Math.random() * 256)}, \${Math.floor(Math.random() * 256)}, \${Math.floor(Math.random() * 256)}, 0.2)`;
+        }
+    });
+
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('{{ path('sustainable_data') }}')
+            .then(response => response.json())
+            .then(data => {
+                const labels = data.map(item => item.year);
+                const sustainablePercentage = data.map(item => item.sustainablePercentage);
+                const sustainableAmount = data.map(item => item.sustainableAmount);
+                const assessedAmount = data.map(item => item.assessedAmount);
+
+                const ctx = document.getElementById('sustainableFishChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Sustainable Percentage',
+                            data: sustainablePercentage,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }, {
+                            label: 'Sustainable Amount',
+                            data: sustainableAmount,
+                            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderWidth: 1
+                        }, {
+                            label: 'Assessed Amount',
+                            data: assessedAmount,
+                            backgroundColor: 'rgba(255, 206, 86, 0.2)',
+                            borderColor: 'rgba(255, 206, 86, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            });
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Hämta data från servern
+        fetch('{{ path('marine_data') }}')
+            .then(response => response.json())
+            .then(data => {
+                // Funktion för att skapa en tabell
+                function createTable(data) {
+                    const table = document.createElement('table');
+                    table.classList.add('stats-table'); // Lägg till en klass för CSS-styling
+
+                    // Skapa header-rad
+                    const thead = table.createTHead();
+                    const headerRow = thead.insertRow();
+                    const headers = ['Region', '2022', '2021', '2020', '2019', '2018'];
+                    headers.forEach(headerText => {
+                        const th = document.createElement('th');
+                        th.appendChild(document.createTextNode(headerText));
+                        headerRow.appendChild(th);
+                    });
+
+                    // Skapa body-rad
+                    const tbody = table.createTBody();
+                    data.forEach(item => {
+                        const row = tbody.insertRow();
+                        const values = [
+                            item.region, 
+                            item.year2022, 
+                            item.year2021, 
+                            item.year2020, 
+                            item.year2019, 
+                            item.year2018
+                        ];
+                        values.forEach(text => {
+                            const cell = row.insertCell();
+                            cell.appendChild(document.createTextNode(text));
+                        });
+                    });
+
+                    return table;
+                }
+
+                // Hämta div-elementet där tabellen ska visas
+                const tableContainer = document.getElementById('table-container');
+                // Skapa tabellen och lägg till den i div-elementet
+                const table = createTable(data);
+                tableContainer.appendChild(table);
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    });
+
+</script>
+{% endblock %}
+", "proj/statistic.html.twig", "/home/maya/dbwebb-kurser/mvc/me/report/templates/proj/statistic.html.twig");
+    }
+}
